@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/UI/Button/Button';
+import ToggleButton from './components/UI/ToggleButton/ToggleButton';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <Button>+</Button>
+        <ToggleButton btnClass="Red"/>
+        <ToggleButton btnClass="Blue"/>
+        <ToggleButton btnClass="Brown"/>
+        <ToggleButton btnClass="Black"/>
       </div>
     );
   }

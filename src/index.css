@@ -6,8 +6,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Open Sans',sans-serif;
   line-height: 1;
+  font-family: 'Open Sans',sans-serif;
   letter-spacing: 0.1rem;
   margin:0;
   padding:1rem;

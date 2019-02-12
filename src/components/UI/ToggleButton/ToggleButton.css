@@ -1,0 +1,62 @@
+.Button {
+    outline:none;
+    cursor:pointer;
+    background-color:transparent;
+    font-family: 'Lato',sans-serif;
+    font-size:4rem;
+    font-weight: 300;
+    width:4.4rem;
+    height:4.4rem;
+    line-height: 4.4rem;
+    border-radius:0.4rem;
+    transition: background-color .3s ease-in, color .3s ease-in;
+    padding:0;
+    /* temporary style*/
+    margin:1rem;
+}
+
+/* red button */
+Button.Red {
+    border:1px solid #900d11;
+    background-color:#BD1218;
+    color:#EBEBEB;
+}
+
+Button.Red:hover,
+Button.Red:active {
+    background-color:#EBEBEB;
+    color:#BD1218;
+}
+/* blue button */
+Button.Blue {
+    border:1px solid #008ABC;
+    background-color: #00AEEF;
+    color:#EBEBEB;
+}
+Button.Blue:hover,
+Button.Blue:active {
+    background-color:#EBEBEB;
+    color:#00AEEF;
+}
+/* brown button */
+Button.Brown {
+    border:1px solid #BC974C;
+    background-color: #CBAD73;
+    color:#EBEBEB;
+}
+Button.Brown:hover,
+Button.Brown:active {
+    background-color:#EBEBEB;
+    color:#CBAD73;
+}
+/* black button */
+Button.Black {
+    border:1px solid #000000;
+    background-color: #222222;
+    color: #EBEBEB;
+}
+Button.Black:hover,
+Button.Black:active {
+    background-color:#EBEBEB;
+    color:#222222;
+}
