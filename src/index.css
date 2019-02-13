@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans',sans-serif;
   letter-spacing: 0.1rem;
   margin:0;
-  padding:1rem;
+  background-color: #222222;
 }
 
 h1,h2,h3,h4,h5,h6 {

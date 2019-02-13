@@ -1,4 +1,5 @@
 .Button {
+    display: inline-block;
     outline:none;
     cursor:pointer;
     background-color:transparent;
@@ -7,7 +8,7 @@
     font-weight: 300;
     width:4.4rem;
     height:4.4rem;
-    line-height: 4.4rem;
+    line-height: 1;
     border-radius:0.4rem;
     transition: background-color .3s ease-in, color .3s ease-in;
     padding:0;
