@@ -1,0 +1,32 @@
+.Hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width:3.2rem;
+    height:3.2rem;
+    border:0.1rem solid #900d11;
+    border-radius:0.2rem;
+    padding:0.4rem;
+    cursor:pointer;
+    transition:background-color .3s ease-out;
+    flex-shrink: 0;
+}
+.Hamburger:hover,
+.Hamburger:active {
+    background-color:#EBEBEB;
+}
+.Hamburger div {
+    height:0.3rem;
+    background-color:#EBEBEB;
+    transition:background-color .3s ease-out;
+}
+.Hamburger:hover div,
+.Hamburger:active div {
+    background-color:#DB1218;
+}
+@media (min-width:1000px){
+    .Hamburger {
+        display: none;
+    }
+}

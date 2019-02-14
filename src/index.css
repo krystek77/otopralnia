@@ -7,20 +7,21 @@ html {
 }
 body {
   line-height: 1;
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Lato',sans-serif;
   letter-spacing: 0.1rem;
   margin:0;
-  background-color: #222222;
+  min-width: 320px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: Oswald,sans-serif;
+  font-family: "Oswald",sans-serif;
   margin:0;
+  color:#222222;
 }
 p{
   margin:0;
   font-size: 1.6rem;
-  line-height: 2rem;
-  font-weight: 300;
-  padding:1rem;
+  line-height: 2;
+  font-weight: 400;
+  padding:0;
 }

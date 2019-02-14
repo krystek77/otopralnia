@@ -1,0 +1,35 @@
+.NavigationItem {
+    padding-right:1rem;
+    padding-left:1rem;
+    border-right:1px dotted #900d11;
+}
+.NavigationLink {
+    display: block;
+    text-decoration: none;
+    color:#EBEBEB;
+    font-size: 2rem;
+    padding:3rem 1.5rem 2rem;
+    margin-left:-1rem;
+    margin-right:-1rem;
+    font-family: "Oswald",sans-serif;
+    border-bottom:1rem solid transparent;
+    font-weight: 300;
+    white-space: nowrap;
+    transition: background-color .3s ease-out,color .3s ease-out,border-bottom .3s ease-out;
+}
+.NavigationLink:hover,
+.NavigationLink:active,
+.NavigationLink.active {
+    border-bottom:1rem solid #222222;
+    background-color:#EBEBEB;
+    color:#BD1218;
+    border-top-right-radius:1rem;
+    border-top-left-radius:1rem;
+}
+/* .NavigationLink.active {
+    background-color:rgb(203,173,115);
+    color:#EBEBEB;
+} */
+.Last {
+    border-right:initial;
+}

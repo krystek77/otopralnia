@@ -1,0 +1,12 @@
+.Logo {
+    display: block;
+    border:0.1rem solid #900d11;
+    border-radius:0.4rem;
+    overflow:hidden;
+    width:120px;
+    flex-shrink: 0;
+}
+.Logo img {
+    width:100%;
+    display: block;
+}

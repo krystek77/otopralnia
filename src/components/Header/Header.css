@@ -1,0 +1,37 @@
+.Header {
+    margin-top:82px;
+    background-color: #222222;
+    height:450px;
+}
+.Container {
+    max-width: 960px;
+    margin:0 auto;
+    padding:2rem 1.5rem;
+    color:#EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.PageTitle {
+    color:#EBEBEB;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.PageInfo {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+.PageDetails {
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
