@@ -1,0 +1,68 @@
+[{
+        "id": 1,
+        "name": "",
+        "title": "Pralma",
+        "info": "Poslki Producent Przemysłowych Urządzeń Pralniczych",
+        "details":"Pralnice - Pralnicowirówki - Bariery Higieny - Suszarki - Wirówki - Urządzenia do transportu",
+        "url":"/",
+        "actionBtn":{"label":"Ponaj ofertę","class":"Black","url":"/wyposazenie-pralni-przemyslowych"}
+    },
+    {
+        "id": 2,
+        "name": "Klienci",
+        "title": "Segmenty",
+        "info": "Pralnie przemysłowe dla wszytkich rodzajów działalności oraz o różnej wydajności ",
+        "details":"Hotele -Domy Opieki - Gastronomia - Apartamenty - Pralnie komercyjne - Pralnie zakładowe",
+        "url":"/klienci-pralni-przemyslowych"
+    },
+    {
+        "id": 3,
+        "name": "Wyposażenie",
+        "title": "Wyposażenie",
+        "info": "Przemysłowych i komercyjnych pralni wodnych oraz chemicznych",
+        "details":"Urządzenia - Transport międzyoperacyjny - Sposób na produktywność - Oszczędność mediów",
+        "url":"/wyposazenie-pralni-przemyslowych"
+    },
+    {
+        "id": 4,
+        "name": "Technologie",
+        "title": "Wydajność i ekonomia",
+        "info": "Innowacyjne rozwiązania aby zwiększyć produktywność i ekonomię prania",
+        "details":"W pełni programowalne sterowniki - Programy ekonomiczne - Rozwiązania mechaniczne i elektroniczne",
+        "url":"/technologie-nowoczesnej-pralni-przemyslowej"
+    },
+    {
+        "id": 5,
+        "name": "Recykling mediów",
+        "title": "Minimalizacja kosztów",
+        "info": "Rozwiązania i systemy służące ograniczaniu zużycia mediów",
+        "details":"Woda - Energia - Powietrze - Ekologia",
+        "url":"/recykling-mediow-w-pralni"
+    },
+    {
+        "id": 6,
+        "name": "Wiadomości",
+        "title": "Wiadomości",
+        "info": "Aktualne wydarzenia i nowości z branży przemysłowych urządzeń pralniczych",
+        "details":"Technologie - Urządzenia - Wydarzenia",
+        "url":"/wiadomosci-o-pralniach-przemyslowych"
+    },
+    {
+        "id": 7,
+        "name": "O nas",
+        "title": "Producent",
+        "info": "Systemów i rozwiązań do pralni przemysłowych i komercyjnych",
+        "details":"Urządzenia - Transport międzyoperacyjny - Sposób na produktywność - Oszczędność mediów",
+        "url":"/o-pralma",
+        "actionBtn":{"label":"Ponaj ofertę","class":"Blue","url":"/wyposazenie-pralni-przemyslowych"}
+    },
+    {
+        "id": 8,
+        "name": "Kontakt",
+        "title": "Napisz do nas",
+        "info": "Złożymy ofertę na wyposażenie pralni przemysłowej optymalne do Twoich potrzeb",
+        "details":"Projekt - Dostawa - Montaż - Szkolenie - Wsparcie Techniczne",
+        "url":"/kontakt-do-producenta-pralek-przemyslowych",
+        "actionBtn":{"label":"Poznaj ofertę","class":"Red","url":"/wyposazenie-pralni-przemyslowych"}
+    }
+]

@@ -5,6 +5,8 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 
 const navigationItems =props=>{
+    // console.log("navigationItems")
+    // console.log(props)
     return (
         <ul className={classes.NavigationItems}>
             <NavigationItem link="/klienci-pralni-przemyslowych">Klienci</NavigationItem>

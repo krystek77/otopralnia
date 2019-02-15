@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  height:100%;
 }
 body {
   line-height: 1;
@@ -11,6 +12,7 @@ body {
   letter-spacing: 0.1rem;
   margin:0;
   min-width: 320px;
+  /*height:calc(100% - 82px);*/
 }
 
 h1,h2,h3,h4,h5,h6 {

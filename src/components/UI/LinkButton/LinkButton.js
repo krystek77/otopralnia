@@ -11,7 +11,7 @@ const linkButton = props => {
 
         <Link 
             to={{
-                pathname:"/wyposazenie-pralni-przemyslowych"
+                pathname:props.url
             }} 
             className={btnClass}>
             {props.children}
