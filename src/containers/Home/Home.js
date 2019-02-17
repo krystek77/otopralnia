@@ -4,6 +4,7 @@ import classes from './Home.css';
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
 
+
 class Home extends Component {
 
     state = {
@@ -12,6 +13,7 @@ class Home extends Component {
     }
 
     componentDidMount(){
+        
         // console.log("Component Did Mount")
         // console.log(this.props.match.url)
         const dataPages = this.props.data
@@ -42,7 +44,7 @@ class Home extends Component {
                         title={title} 
                         info={info} 
                         details={details}
-                        actionBtn={actionBtn===null ? false : actionBtn}
+                        actionBtn={actionBtn}
                         />
                     <main className={classes.Home}>
                         <div className={classes.Container}>

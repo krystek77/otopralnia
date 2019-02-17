@@ -32,7 +32,7 @@ class AboutUs extends Component {
                 title={title} 
                 info={info} 
                 details={details}
-                actionBtn={actionBtn===null ? false : actionBtn}
+                actionBtn={actionBtn}
                 />
                 <main className={classes.AboutUs}>
                     <div className={classes.Container}>

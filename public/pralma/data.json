@@ -60,9 +60,9 @@
         "id": 8,
         "name": "Kontakt",
         "title": "Napisz do nas",
-        "info": "Złożymy ofertę na wyposażenie pralni przemysłowej optymalne do Twoich potrzeb",
-        "details":"Projekt - Dostawa - Montaż - Szkolenie - Wsparcie Techniczne",
+        "info": "Nasz zespół jest gotowy do udzielenia Pańswtu wszelkich niezbędnych informacji oraz wsparcia technicznego.",
+        "details":"Skontaktuj się z nami za pomocą formularza lub z konkretną osobą z listy poniżej",
         "url":"/kontakt-do-producenta-pralek-przemyslowych",
-        "actionBtn":{"label":"Poznaj ofertę","class":"Red","url":"/wyposazenie-pralni-przemyslowych"}
+        "emailBtn":{"label":"biuro@pralma.pl","class":"Blue","url":"mailto:biuro@pralma.pl"}
     }
 ]

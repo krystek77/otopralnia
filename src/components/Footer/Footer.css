@@ -1,5 +1,5 @@
 .Footer {
-    background-color: #cbad73;
+    background-color: #00AEEF;
 }
 .Container {
     max-width: 1680px;
@@ -12,8 +12,9 @@
 }
 .Address,.Navigation,.Newsletter,.Social {
     width:25%;
-    border-right:1px solid #bc974c;
+    border-right:1px solid #008AEF;
     padding:2rem;
+    color:#222222;
 }
 
 .Copyright {

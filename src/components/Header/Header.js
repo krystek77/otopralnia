@@ -2,12 +2,11 @@ import React from 'react';
 import classes from './Header.css';
 
 import LinkButton from '../UI/LinkButton/LinkButton';
+import EmailButton from '../UI/EmailButton/EmailButton';
 
 const header =props=>{
     console.log(props)
 
-    
-    
     return (
         <header className={classes.Header}>
             <div className={classes.Container}>
@@ -19,6 +18,14 @@ const header =props=>{
                     btnClass={props.actionBtn.class}
                     url={props.actionBtn.url}>{props.actionBtn.label}
                 </LinkButton>
+                }
+                {
+                    props.emailBtn &&
+                    <EmailButton 
+                    btnClass={props.emailBtn.class}
+                    mailto={props.emailBtn.url}>
+                    {props.emailBtn.label}
+                    </EmailButton>
                 }
             </div>
         </header>

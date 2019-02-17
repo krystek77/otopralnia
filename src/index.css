@@ -1,7 +1,19 @@
+
 *,*::after,*::before {
   box-sizing: border-box;
 }
-
+:root {
+  --dBlack:#111111;
+  --black:#222222;
+  --dBlue:#008AEF;
+  --blue:#00AEEF;
+  --dRed:#900D11;
+  --red:#BD1218;
+  --dBrown:#BC974C;
+  --brown:#CBAD73;
+  --dGrey:#3F3F3F;
+  --grey:#EBEBEB;
+}
 html {
   font-size: 62.5%;
   height:100%;

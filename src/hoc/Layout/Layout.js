@@ -22,9 +22,9 @@ class Layout extends Component {
       }
     
       componentDidMount(){
-         axios.get('pralma/data.json')
+         axios.get('/pralma/data.json')
         .then(response=>{
-        //   console.log(response.data)
+          console.log(response.data)
           this.setState({
             data:response.data
           })

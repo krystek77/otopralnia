@@ -1,4 +1,4 @@
-.LinkButton {
+.EmailButton {
     display: block;
     text-decoration: none;
     border-radius:0.4rem;
@@ -11,54 +11,54 @@
     width:max-content;
     padding:0 2.2rem;
     animation: buttonScale .6s ease-in-out;
-    cursor:pointer;
     /*temporary*/
     margin:1rem;
 }
 /* link button red */
-.LinkButton.Red {
+.EmailButton.Red {
     border:1px solid #900d11;
     background-color:#BD1218;
     color:#EBEBEB;
 }
-.LinkButton.Red:hover,
-.LinkButton.Red:active {
+.EmailButton.Red:hover,
+.EmailButton.Red:active {
     background-color: #EBEBEB;
     color: #BD1218;
 }
 /* link button black*/
-.LinkButton.Black {
+.EmailButton.Black {
     border:1px solid #000000;
     background-color:#222222;
     color:#EBEBEB;
 }
-.LinkButton.Black:hover,
-.LinkButton.Black:active {
+.EmailButton.Black:hover,
+.EmailButton.Black:active {
     background-color: #EBEBEB;
     color: #222222;
 }
 /* link button blue*/
-.LinkButton.Blue {
-    border:1px solid #008aef;
-    background-color:#00aeef;
+.EmailButton.Blue {
+    border:1px solid #008AEF;
+    background-color:#00AEEF;
     color:#EBEBEB;
 }
-.LinkButton.Blue:hover,
-.LinkButton.Blue:active {
+.EmailButton.Blue:hover,
+.EmailButton.Blue:active {
     background-color: #EBEBEB;
     color: rgb(0,174,239);
 }
 /* link button brown*/
-.LinkButton.Brown {
-    border:1px solid rgb(188,151,76);
-    background-color:rgb(203,173,115);
+.EmailButton.Brown {
+    border:1px solid #bc974c;
+    background-color:#cbad73;
     color:#EBEBEB;
 }
-.LinkButton.Brown:hover,
-.LinkButton.Brown:active {
+.EmailButton.Brown:hover,
+.EmailButton.Brown:active {
     background-color: #EBEBEB;
     color: rgb(203,173,115);
 }
+
 @keyframes buttonScale {
     0%{
         transform:scale(1);

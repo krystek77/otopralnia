@@ -1,4 +1,4 @@
-.LinkButton {
+.Button {
     display: block;
     text-decoration: none;
     border-radius:0.4rem;
@@ -15,47 +15,47 @@
     /*temporary*/
     margin:1rem;
 }
-/* link button red */
-.LinkButton.Red {
+/* button red */
+.Button.Red {
     border:1px solid #900d11;
     background-color:#BD1218;
     color:#EBEBEB;
 }
-.LinkButton.Red:hover,
-.LinkButton.Red:active {
+.Button.Red:hover,
+.Button.Red:active {
     background-color: #EBEBEB;
     color: #BD1218;
 }
-/* link button black*/
-.LinkButton.Black {
+/* button black*/
+.Button.Black {
     border:1px solid #000000;
     background-color:#222222;
     color:#EBEBEB;
 }
-.LinkButton.Black:hover,
-.LinkButton.Black:active {
+.Button.Black:hover,
+.Button.Black:active {
     background-color: #EBEBEB;
     color: #222222;
 }
-/* link button blue*/
-.LinkButton.Blue {
+/* button blue*/
+.Button.Blue {
     border:1px solid #008aef;
     background-color:#00aeef;
     color:#EBEBEB;
 }
-.LinkButton.Blue:hover,
-.LinkButton.Blue:active {
+.Button.Blue:hover,
+.Button.Blue:active {
     background-color: #EBEBEB;
     color: rgb(0,174,239);
 }
-/* link button brown*/
-.LinkButton.Brown {
+/* button brown*/
+.Button.Brown {
     border:1px solid rgb(188,151,76);
     background-color:rgb(203,173,115);
     color:#EBEBEB;
 }
-.LinkButton.Brown:hover,
-.LinkButton.Brown:active {
+.Button.Brown:hover,
+.Button.Brown:active {
     background-color: #EBEBEB;
     color: rgb(203,173,115);
 }
