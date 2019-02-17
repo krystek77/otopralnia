@@ -1,0 +1,8 @@
+.ContactBoxes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    margin-top:1rem;
+}

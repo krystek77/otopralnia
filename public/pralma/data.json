@@ -61,8 +61,33 @@
         "name": "Kontakt",
         "title": "Napisz do nas",
         "info": "Nasz zespół jest gotowy do udzielenia Pańswtu wszelkich niezbędnych informacji oraz wsparcia technicznego.",
-        "details":"Skontaktuj się z nami za pomocą formularza lub z konkretną osobą z listy poniżej",
+        "details":"Skontaktuj się z nami za pomocą formularza lub z osobą z określonego działu, z listy poniżej.",
         "url":"/kontakt-do-producenta-pralek-przemyslowych",
-        "emailBtn":{"label":"biuro@pralma.pl","class":"Blue","url":"mailto:biuro@pralma.pl"}
+        "contactBoxes":{
+            "seller":{
+                "id":1,
+                "title":"Oferta",
+                "phone":"+48602191607",
+                "phoneLabel":"+48 602 191 607",
+                "email":"k.wrona@pralma.pl",
+                "emailLabel":"k.wrona@pralma.pl"
+            },
+            "service":{
+                "id":2,
+                "title":"Serwis",
+                "phone":"+48664962002",
+                "phoneLabel":"+48 664 962 002",
+                "email":"serwis@pralma.pl",
+                "emailLabel":"serwis@pralma.pl"
+            },
+            "spareParts":{
+                "id":3,
+                "title":"Części zamienne",
+                "phone":"+48413450561",
+                "phoneLabel":"+48 41 345 05 61",
+                "email":"biuro@pralma.pl",
+                "emailLabel":"biuro@pralma.pl"
+            }
+        }
     }
 ]

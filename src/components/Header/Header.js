@@ -2,10 +2,10 @@ import React from 'react';
 import classes from './Header.css';
 
 import LinkButton from '../UI/LinkButton/LinkButton';
-import EmailButton from '../UI/EmailButton/EmailButton';
+import ContactBoxes from '../../containers/Contact/ContactBoxes/ContactBoxes';
 
 const header =props=>{
-    console.log(props)
+    // console.log(props.contactBoxes)
 
     return (
         <header className={classes.Header}>
@@ -19,14 +19,8 @@ const header =props=>{
                     url={props.actionBtn.url}>{props.actionBtn.label}
                 </LinkButton>
                 }
-                {
-                    props.emailBtn &&
-                    <EmailButton 
-                    btnClass={props.emailBtn.class}
-                    mailto={props.emailBtn.url}>
-                    {props.emailBtn.label}
-                    </EmailButton>
-                }
+                {props.contactBoxes && <ContactBoxes contactBoxes={props.contactBoxes}/>}
+                
             </div>
         </header>
     )

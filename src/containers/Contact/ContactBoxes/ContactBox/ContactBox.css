@@ -1,0 +1,29 @@
+.ContactBox {
+    padding:1.5rem;
+}
+.ContactBoxTitle{
+    border-bottom:1px dotted var(--blue); 
+    font-size: 2rem;
+    font-weight: 300;
+    line-height:1;
+    text-align: left;
+    color:var(--blue);
+    padding:2rem 1rem;
+}
+.ContactBoxPhone {
+    margin-top:2rem;
+    padding:0 1rem;
+}
+.ContactBoxEmail {
+    margin-top:0.5rem;
+    color:var(--blue);
+    padding:0 1rem;
+}
+
+.Phone,.Email {
+    text-decoration: none;
+    color:var(--gray);
+    font-weight: 300;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}

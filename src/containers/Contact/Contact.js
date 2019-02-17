@@ -28,15 +28,15 @@ class Contact extends Component {
 
     if(data){
             
-        const {title,info,details,emailBtn} = data
-
+        const {title,info,details,contactBoxes} = data
+        // console.log(contactBoxes)
         content = (
             <Aux>
                 <Header 
                     title={title} 
                     info={info} 
                     details={details}
-                    emailBtn={emailBtn}
+                    contactBoxes={contactBoxes}
                     />
                 <main className={classes.Contact}>
                     <section className={classes.GoogleMap}>
