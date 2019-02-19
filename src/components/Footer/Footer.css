@@ -1,5 +1,14 @@
 .Footer {
-    background-color: #00AEEF;
+    background-color: rgba(0, 0, 0,0.92);
+    width:100%;
+    min-height:400px;
+    height:450px;
+    background-image:url(../../assets/images/a.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .Container {
     max-width: 1680px;
@@ -8,24 +17,30 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:strech;
+    align-items:stretch;
 }
 .Address,.Navigation,.Newsletter,.Social {
     width:25%;
-    border-right:1px solid #008AEF;
+    border-right:1px solid #111111;
     padding:2rem;
-    color:#222222;
+    color:#EBEBEB;
+}
+.Social:last-of-type {
+    border-right:initial;
 }
 
 .Copyright {
     width:100%;
-    background-color:#222222;
+    background-color:rgba(0, 0, 0,.95);
     color:#EBEBEB;
+    position: absolute;
+    bottom:0;
+    left:0;
 }
 .Copyright .Container {
     justify-content: space-between;
     align-items: center;
 }
 .Container a {
-    border:1px solid #000000;
+    border:1px solid #222222;
 }

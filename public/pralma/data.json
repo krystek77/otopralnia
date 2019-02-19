@@ -5,7 +5,7 @@
         "info": "Poslki Producent Przemysłowych Urządzeń Pralniczych",
         "details":"Pralnice - Pralnicowirówki - Bariery Higieny - Suszarki - Wirówki - Urządzenia do transportu",
         "url":"/",
-        "actionBtn":{"label":"Ponaj ofertę","class":"Black","url":"/wyposazenie-pralni-przemyslowych"}
+        "actionBtn":{"label":"Ponaj ofertę","bClass":"Black","url":"/wyposazenie-pralni-przemyslowych"}
     },
     {
         "id": 2,
@@ -54,7 +54,7 @@
         "info": "Systemów i rozwiązań do pralni przemysłowych i komercyjnych",
         "details":"Urządzenia - Transport międzyoperacyjny - Sposób na produktywność - Oszczędność mediów",
         "url":"/o-pralma",
-        "actionBtn":{"label":"Ponaj ofertę","class":"Blue","url":"/wyposazenie-pralni-przemyslowych"}
+        "actionBtn":{"label":"Ponaj ofertę","bClass":"Blue","url":"/wyposazenie-pralni-przemyslowych"}
     },
     {
         "id": 8,

@@ -3,6 +3,8 @@ import classes from './AboutUs.css';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
+import Backdrop from '../../components/UI/Backdrop/Backdrop';
+import PageSectionTitle from '../../components/PageSectionTitle/PageSectionTitle';
 
 class AboutUs extends Component {
     state = {
@@ -35,11 +37,27 @@ class AboutUs extends Component {
                 actionBtn={actionBtn}
                 />
                 <main className={classes.AboutUs}>
-                    <div className={classes.Container}>
-                        <h1 style={{fontSize:"6rem",textAlign:"center"}}>
-                            O nas {this.props.match.path}
-                        </h1>    
-                    </div>
+                    <section className={classes.Company}>
+                        <Backdrop backDropColor="Grey" backDropWidth="Part"/>
+                        <div className={classes.Container}>
+                            <PageSectionTitle>Firma</PageSectionTitle>
+                            <p className={[classes.Content,classes.Introduction].join(' ')}>
+                                Jesteśmy polskim producentem przemysłowych urządzeń pralniczych. 
+                            </p>
+                            <p className={[classes.Content,classes.Description].join(' ')}>
+                               Budujemy urządzenia pralnicze oraz dostarczamy ekonomicznych i podnoszących zyskowność 
+                               rozwiązań dla pralni przemysłowych. Pomagamy w projektowaniu małych i dużych pralni każdego typu i wielkości, 
+                               na każdym etapie inwestycji. Dostarczamy wyposażenie, przeprowadzamy montaż oraz uruchomienie pralni. 
+                            </p>
+                            <p className={[classes.Content,classes.Description].join(' ')}>
+                               Chętnie dzielimy się naszą wiedzą i olbrzymim doświadczeniem. Świadczymy wsparcie techniczne oraz
+                               serwis gwarancyjny i pogwarancyjny.  Bazujemy na długoterminowej i zaufanej wspólpracy biznesowej.
+                            </p>
+                            <p className={[classes.Content,classes.Description].join(' ')}>
+                               W wolnych chwilach piszemy bloga o pralnictwie.
+                            </p>  
+                        </div>
+                    </section>
                 </main>
             </Aux>
             )

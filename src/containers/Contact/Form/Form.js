@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import classes from './Form.css';
 import Button from '../../../components/UI/Button/Button';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faUser,faPhoneSquare, faFileSignature, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {FaUser,FaPhoneSquare, FaFileSignature, FaEnvelope} from 'react-icons/fa';
 
 class Form extends Component {
 
@@ -9,20 +12,42 @@ class Form extends Component {
             <form className={classes.Form}>
                 <div className={classes.UserDetails}>
                     <div className={classes.WrapperInput}>
-                        <label className={classes.Label} htmlFor="name">*Imie:</label>
-                        <input className={classes.Input} type="text" id="name" placeholder="Podaj imię" required/>
+                        <label className={classes.Label} htmlFor="name">
+                            <FaUser/>
+                        </label>
+                        <input 
+                            className={classes.Input} 
+                            type="text" id="name" 
+                            placeholder="Podaj imię" 
+                            required/>
                     </div>
                     <div className={classes.WrapperInput}>
-                        <label className={classes.Label} htmlFor="email">*Email:</label>
-                        <input className={classes.Input} type="text" id="email" placeholder="Podaj e-mail" required/>
+                        <label className={classes.Label} htmlFor="email">
+                            <FaEnvelope/>
+                        </label>
+                        <input 
+                            className={classes.Input} 
+                            type="text" id="email" 
+                            placeholder="Podaj e-mail" 
+                            required/>
                     </div>
                     <div className={classes.WrapperInput}>
-                        <label className={classes.Label} htmlFor="phone">Telefon:</label>
-                        <input className={classes.Input} type="text" id="phone" placeholder="Podaj telefon"/>
+                        <label className={classes.Label} htmlFor="phone">
+                            <FaPhoneSquare/>
+                        </label>
+                        <input 
+                            className={classes.Input} 
+                            type="text" id="phone" 
+                            placeholder="Podaj telefon"/>
                     </div>
                     <div className={classes.WrapperInput}>
-                        <label className={classes.Label} htmlFor="subject">Temat:</label>
-                        <input className={classes.Input} type="text" id="subject" placeholder="Podaj temat"/>
+                        <label className={classes.Label} htmlFor="subject">
+                            <FaFileSignature/>
+                        </label>
+                        <input 
+                            className={classes.Input} 
+                            type="text" id="subject" 
+                            placeholder="Podaj temat"/>
                     </div>
                 </div>
                 <div className={classes.Message}>

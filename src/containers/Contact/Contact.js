@@ -10,7 +10,7 @@ import Form from './Form/Form';
 
 class Contact extends Component {
     state = {
-        //data:{title:"",info:"",details:""}
+        //data:{title:"",info:"",details:"",...}
         data:null
     }
 

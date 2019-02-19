@@ -21,7 +21,7 @@ const contactBoxes = props => {
         emailLabel={box.emailLabel}
     />)
 
-    console.log(contactBoxes)
+    // console.log(contactBoxes)
 
     return(
         <div className={classes.ContactBoxes}>

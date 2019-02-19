@@ -4,17 +4,18 @@ import {Link} from 'react-router-dom';
 
 const linkButton = props => {
 
-
-    const btnClass = [classes.LinkButton,classes[props.btnClass]].join(' ');
+    
+    const {label,url,bClass} = props.actionBtn
+    const btnClass = [classes.LinkButton,classes[bClass]].join(' ');
 
     return (
 
         <Link 
             to={{
-                pathname:props.url
+                pathname:url
             }} 
             className={btnClass}>
-            {props.children}
+            {label}
         </Link>
     )
 }

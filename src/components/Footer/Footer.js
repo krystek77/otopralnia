@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Footer.css'
 import Logo from '../../components/Logo/Logo';
+import NewsLetterForm from './NewsLetterForm/NewsLetterForm';
 
 const footer = () => {
     return ( 
@@ -13,14 +14,14 @@ const footer = () => {
                     <p className={classes.Inner}> NAVIGATION Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, alias distinctio? Perspiciatis sit praesentium fugiat suscipit nulla illo neque rerum, inventore cumque doloribus totam, aliquid odit itaque quaerat cupiditate vitae?</p>
                 </div>
                 <div className={classes.Newsletter}>
-                    <p className={classes.Inner}>NEWSLETTER Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga quisquam cumque assumenda perferendis nisi adipisci, fugit in amet harum asperiores iure sapiente esse voluptatum, porro, reprehenderit rem nostrum ea.</p>
+                    <NewsLetterForm/>
                 </div>
                 <div className={classes.Social}><p>SOCIAL</p></div>
                 </div>
                 <div className={classes.Copyright}>
                     <div className={classes.Container}>
                         <Logo/>
-                        <p>&copy; 2019 Wszystkie prawa zastrzeżone</p>
+                        <p>&copy; 2019 by Krystian Wrona. All rights reserved</p>
                     </div>
                 </div>
         </footer> )

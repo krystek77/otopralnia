@@ -1,0 +1,159 @@
+.NewsLetterForm {
+    padding:2rem 1rem 1rem;
+    border-radius:0.4rem;
+    border:1px solid var(--black);
+}
+
+.Title {
+    width:100%;
+    color:var(--grey);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-bottom:1.5rem;
+}
+.SubTitle {
+    line-height: 1.2;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.4rem;
+    margin-bottom:1.5rem;
+}
+.InputGroup {
+    position: relative;
+    width:100%;
+    margin:0 auto 1.5rem;
+}
+.InputGroup:after {
+    position: absolute;
+    display: block;
+    content:'';
+    height:0.2rem;
+    width:0%;
+    bottom:0;
+    left:0;
+    background-color:var(--blue);
+    transition: width .3s ease-in;
+}
+.LeadingIcon,.LabelText,.TrailingIcon {
+    display: block;
+    position: absolute;
+}
+.InputText {
+    display: block;
+    width:100%;
+    height:56px;
+    border:none;
+    outline:none;
+    border-top-left-radius:0.4rem;
+    border-top-right-radius:0.4rem;
+    background-color:var(--grey);
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding:0 1.2rem 0 4.8rem;
+    font-weight: 500;
+    color:var(--black);
+}
+.InputText:disabled {
+    background-color:#3F3F3F;
+}
+
+.LeadingIcon {
+    top:1.6rem;
+    left:1.2rem;
+    width:3.6rem;
+    height:2.4rem;
+    font-size: 2.4rem;
+    color:var(--black);
+}
+.TrailingIcon {
+    top:1.6rem;
+    right:1.2rem;
+    width:2.4rem;
+    height:2.4rem;
+    font-size: 2.4rem;
+    transition: color .3s ease-in;
+}
+
+.LabelText {
+    font-family:'Raleway',sans-serif;
+    font-size:1.4rem;
+    font-weight: 600;
+    color:var(--black);
+    left:4.8rem;
+    top:2.1rem;
+    transition: top .3s ease-in;
+    
+}
+.InputGroup.Focus:after {
+    width:100%;
+}
+.LabelText.Focus {
+    top:0.5rem;
+    color:var(--dBlue);
+}
+.TrailingIcon.Focus {
+    color: var(--dBlue);
+}
+
+.CheckBox {
+    position: absolute;
+    left:-9999px;
+}
+.LabelCheckBox {
+    position: relative;
+    padding-left:3.62rem;
+    cursor:pointer;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.6rem;
+    padding-top:0.4rem;
+}
+.CheckBox:not(:checked) + .LabelCheckBox:before,
+.CheckBox:checked + .LabelCheckBox:before{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    content:'';
+    width:2.4rem;
+    height:2.4rem;
+    background-color: var(--grey);
+    border:1px solid var(--black);
+    border-radius:0.4rem;
+}
+.CheckBox:not(:checked)+ .LabelCheckBox:after,
+.CheckBox:checked+ .LabelCheckBox:after {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:2.4rem;
+    height:2.4rem;
+    font-family: 'Raleway',sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    content:'\2713\0020';
+    border:1px solid var(--dBlue);
+    border-radius:0.4rem;
+    color:var(--dBlue);
+    opacity:1;
+    transition:opacity .3s ease-in;
+}
+
+.CheckBox:not(:checked) + .LabelCheckBox:after {
+    opacity:0;
+}
+.CheckBox:disabled:not(:checked) + .LabelCheckBox:before,
+.CheckBox:disabled:checked + .LabelCheckBox:before {
+    color:#666666;
+    border-color:var(--dBlack);
+    background-color:#3F3F3F;
+}
+.CheckBox:disabled:checked + .LabelCheckBox:after {
+    color:#666666;
+    border-color:var(--dBlack);
+    background-color:#3F3F3F;
+  }
+.CheckBox:disabled + .LabelCheckBox {
+    color:#666666;
+    cursor: auto;
+}
