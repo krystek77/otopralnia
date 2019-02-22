@@ -36,7 +36,7 @@ class Home extends Component {
             // console.log(this.state.data.title)
             // console.log(this.state.data.info)
             // console.log(this.state.data.details)
-            const {title,info,details,actionBtn} = data
+            const {id,title,info,details,actionBtn} = data
 
             content = (
                 <Aux>
@@ -45,6 +45,7 @@ class Home extends Component {
                         info={info} 
                         details={details}
                         actionBtn={actionBtn}
+                        id={id}
                         />
                     <main className={classes.Home}>
                         <div className={classes.Container}>

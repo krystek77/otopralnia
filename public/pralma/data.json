@@ -41,10 +41,10 @@
     },
     {
         "id": 6,
-        "name": "Wiadomości",
-        "title": "Wiadomości",
+        "name": "Blog",
+        "title": "Blog",
         "info": "Aktualne wydarzenia i nowości z branży przemysłowych urządzeń pralniczych",
-        "details":"Technologie - Urządzenia - Wydarzenia",
+        "details":"Technologie - Urządzenia - Targi",
         "url":"/wiadomosci-o-pralniach-przemyslowych"
     },
     {

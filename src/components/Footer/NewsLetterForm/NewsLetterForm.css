@@ -18,11 +18,14 @@
     margin-bottom:1.5rem;
 }
 .InputGroup {
-    position: relative;
     width:100%;
     margin:0 auto 1.5rem;
 }
-.InputGroup:after {
+.InputWrapper {
+    position: relative;
+    width:100%;
+}
+.InputWrapper:after {
     position: absolute;
     display: block;
     content:'';
@@ -36,9 +39,12 @@
 .LeadingIcon,.LabelText,.TrailingIcon {
     display: block;
     position: absolute;
+    z-index:1;
 }
 .InputText {
     display: block;
+    position:relative;
+    z-index:0;
     width:100%;
     height:56px;
     border:none;
@@ -53,8 +59,9 @@
     font-weight: 500;
     color:var(--black);
 }
+
 .InputText:disabled {
-    background-color:#3F3F3F;
+    background-color:var(--disabledBg);
 }
 
 .LeadingIcon {
@@ -72,6 +79,7 @@
     height:2.4rem;
     font-size: 2.4rem;
     transition: color .3s ease-in;
+    display: none;
 }
 
 .LabelText {
@@ -84,16 +92,23 @@
     transition: top .3s ease-in;
     
 }
-.InputGroup.Focus:after {
+.InputWrapper.Focus:after {
     width:100%;
 }
-.LabelText.Focus {
+.LabelText.Focus,.LabelText.Blur {
     top:0.5rem;
     color:var(--dBlue);
 }
-.TrailingIcon.Focus {
+
+.TrailingIcon.Wrong {
+    display: block;
+    color: var(--error);
+}
+.TrailingIcon.Right {
+    display: block;
     color: var(--dBlue);
 }
+
 
 .CheckBox {
     position: absolute;
@@ -144,16 +159,28 @@
 }
 .CheckBox:disabled:not(:checked) + .LabelCheckBox:before,
 .CheckBox:disabled:checked + .LabelCheckBox:before {
-    color:#666666;
+    color:var(--disabledColor);
     border-color:var(--dBlack);
-    background-color:#3F3F3F;
+    background-color:var(--disabledBg);
 }
 .CheckBox:disabled:checked + .LabelCheckBox:after {
-    color:#666666;
+    color:var(--disabledColor);
     border-color:var(--dBlack);
-    background-color:#3F3F3F;
+    background-color:var(--disabledBg);
   }
 .CheckBox:disabled + .LabelCheckBox {
-    color:#666666;
+    color:var(--disabledColor);
     cursor: auto;
+}
+.Error {
+    display: block;
+    margin-top:0.5rem;
+    font-family: 'Raleway',sans-serif;
+    padding:0.2rem 1.4rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:var(--grey);
+    background-color:var(--error);
+    width:max-content;
 }

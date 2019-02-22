@@ -12,6 +12,7 @@
     padding:0 2.2rem;
     animation: buttonScale .6s ease-in-out;
     cursor:pointer;
+    outline:none;
     /*temporary*/
     margin:1rem auto;
 }

@@ -26,7 +26,7 @@ class AboutUs extends Component {
 
     if(data){
             
-        const {title,info,details,actionBtn} = data
+        const {id,title,info,details,actionBtn} = data
 
         content = (
             <Aux>
@@ -35,6 +35,7 @@ class AboutUs extends Component {
                 info={info} 
                 details={details}
                 actionBtn={actionBtn}
+                id={id}
                 />
                 <main className={classes.AboutUs}>
                     <section className={classes.Company}>

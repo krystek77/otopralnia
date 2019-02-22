@@ -13,6 +13,9 @@
   --brown:#CBAD73;
   --dGrey:#3F3F3F;
   --grey:#EBEBEB;
+  --disabledColor:#666666;
+  --disabledBg:#3F3F3F;
+  --error:#FF0000;
 }
 html {
   font-size: 62.5%;

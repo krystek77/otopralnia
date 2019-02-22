@@ -24,15 +24,19 @@ class News extends Component {
 
     if(data){
             
-        const {title,info,details} = data
+        const {id,title,info,details} = data
 
         content = (
             <Aux>
-                <Header title={title} info={info} details={details}/>
+                <Header 
+                title={title} 
+                info={info} 
+                details={details}
+                id={id}/>
                 <main className={classes.News}>
                     <div className={classes.Container}>
                         <h1 style={{fontSize:"6rem",textAlign:"center"}}>
-                            Wiadomości {this.props.match.path}
+                            Blog {this.props.match.path}
                         </h1>    
                     </div>
                 </main>

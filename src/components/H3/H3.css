@@ -1,0 +1,22 @@
+.Title {
+    width:100%;
+    color:var(--grey);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-bottom:1.5rem;
+}
+.Red {
+    color:var(--dRed);
+}
+.Blue {
+    color:var(--dBlue);
+}
+.Black {
+    color:var(--dBlack);
+}
+.Brown {
+    color:var(--dBrown);
+}
+.Grey {
+    color:var(--grey);
+}

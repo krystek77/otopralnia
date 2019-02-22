@@ -3,6 +3,7 @@ import classes from './Equipment.css';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
+import SectionTab from '../../components/SectionTab/SectionTab';
 
 class Equipment extends Component {
     state = {
@@ -17,24 +18,26 @@ class Equipment extends Component {
             data:dataPage
         })
     }
+
     render(){
-        
+
     let content = null
     const {data} = this.state
 
     if(data){
             
-        const {title,info,details} = data
+        const {id,title,info,details} = data
 
         content = (
             <Aux>
-                <Header title={title} info={info} details={details}/>
+                <Header 
+                title={title} 
+                info={info} 
+                details={details}
+                id={id}/>
                 <main className={classes.Equipment}>
-                    <div className={classes.Container}>
-                        <h1 style={{fontSize:"6rem",textAlign:"center"}}>
-                            Wyposażenie {this.props.match.path}
-                        </h1>    
-                    </div>
+                    <SectionTab title="Maszyny obsługowe" active/>
+                    <SectionTab title="Maszyny samoobsługowe"/>
                 </main>
             </Aux>
             )

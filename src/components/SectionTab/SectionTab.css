@@ -1,0 +1,59 @@
+.Container {
+    max-width: 1170px;
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:100%;
+}
+.Header {
+    padding:3rem 1.5rem;
+}
+
+.Title {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor:pointer;
+    color:var(--black);
+    line-height: 1.5;
+    padding-left:2rem;
+    flex-grow: 1;
+    transition: all .25s ease-out;
+}
+.Title:hover {
+    font-weight: 300;
+}
+.Title.Active {
+    font-weight: 300;
+}
+.Content {
+    max-height: 1px;
+    overflow:hidden;
+    position: relative;
+    transition:max-height 0.25s ease-out;
+}
+.Content > .Container {
+    padding:2rem 1.5rem;
+}
+.Content::after {
+    display: block;
+    position: absolute;
+    left:0;
+    bottom:0px;
+    z-index:2;
+    content:'';
+    height:1px;
+    width:100%;
+    background-color:var(--black);
+    transition:width 1s ease-in;
+}
+.Active {
+    max-height: 300px;
+    transition:max-height 0.5s ease-in;
+}
+.Content.Active::after {
+    width:0%;
+    transition:width 0.5s ease-out;
+}

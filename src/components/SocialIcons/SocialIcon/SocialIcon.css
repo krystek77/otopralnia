@@ -1,0 +1,46 @@
+.SocialIcon {
+    display:block;
+    width:3.2rem;
+    height:3.2rem;
+    font-size: 3.2rem;
+    line-height: 1;
+    margin:0.5rem 0.5rem 0.5rem 0;
+}
+.SocialIcon.UserPanel {
+    display:block;
+    width:1.6rem;
+    height:1.6rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin:0.5rem 0.5rem 0.5rem 0;
+}
+
+.Facebook {
+    color:#3b5999;
+}
+.Twitter {
+    color:#55acee;
+}
+.GooglePlus {
+    color:#dd4b39;
+}
+.Instagram {
+    color:#e4405f;
+}
+.Youtube {
+    color:#cd201f;
+}
+
+.Facebook.UserPanel,.Twitter.UserPanel,.GooglePlus.UserPanel,.Instagram.UserPanel,.Youtube.UserPanel {
+    color:var(--black);
+}
+.Youtube.UserPanel {
+    margin-right:0;
+}
+.Facebook:hover,
+.Twitter:hover,
+.Youtube:hover,
+.GooglePlus:hover,
+.Instagram:hover {
+    color:var(--grey)
+}

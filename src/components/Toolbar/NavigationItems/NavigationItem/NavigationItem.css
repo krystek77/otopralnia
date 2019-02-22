@@ -3,6 +3,11 @@
     padding-left:1rem;
     border-right:1px dotted #900d11;
 }
+.NavigationItem.Footer {
+    border-right: initial;
+    padding-right:0;
+    padding-left:0;
+}
 .NavigationLink {
     display: block;
     text-decoration: none;
@@ -15,7 +20,14 @@
     border-bottom:1rem solid transparent;
     font-weight: 300;
     white-space: nowrap;
-    transition: background-color .3s ease-out,color .3s ease-out,border-bottom .3s ease-out;
+    transition: background-color .3s ease-in,color .3s ease-in,border-bottom .3s ease-in;
+}
+.NavigationLink.Footer {
+    padding:1rem 1.5rem;
+    margin-left:0;
+    margin-right:0;
+    border-bottom:0;
+    transition: background-color 0.3s ease-in,color .3s ease-in;
 }
 .NavigationLink:hover,
 .NavigationLink:active,
@@ -23,13 +35,15 @@
     border-bottom:1rem solid #222222;
     background-color:#EBEBEB;
     color:#BD1218;
-    border-top-right-radius:1rem;
-    border-top-left-radius:1rem;
 }
-/* .NavigationLink.active {
-    background-color:rgb(203,173,115);
-    color:#EBEBEB;
-} */
+.NavigationLink.Footer:hover,
+.NavigationLink.Footer:active,
+.NavigationLink.Footer.active {
+    border-bottom:none;
+    background-color:#EBEBEB;
+    color:#BD1218;
+}
+
 .Last {
     border-right:initial;
 }

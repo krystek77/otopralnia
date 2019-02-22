@@ -1,16 +1,60 @@
 .Header {
-    margin-top:82px;
+    /*margin-top = height of toolbar*/
+    margin-top:108px;
     width:100%;
     min-height:400px;
     height:600px;
-    background-color: rgba(0, 0, 0,0.8);
-    background-image:url(../../assets/images/a.jpg);
+    background-color: rgba(0, 0, 0,0.7);
+    background-image:url(../../assets/images/home.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    
 }
+
+.Header.AboutUs{
+    background-image:url(../../assets/images/aboutUs.jpg);
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+    background-position: left bottom;
+}
+.Header.Contact{
+    background-image:url(../../assets/images/contact.jpg);
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+}
+.Header.Customers{
+    background-image:url(../../assets/images/customers.jpg);
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+}
+.Header.Equipment{
+    background-image:url(../../assets/images/equipment.jpg);
+    background-color:rgba(0,0,0,0.3);
+    background-blend-mode: overlay;
+    background-position: left bottom;
+}
+.Header.Home{
+    background-image:url(../../assets/images/home.jpg);
+    background-color:rgba(0,0,0,0.7);
+    background-blend-mode: luminosity;
+}
+.Header.Blog{
+    background-image:url(../../assets/images/blog.jpg);
+    background-color:rgba(0,0,0,0.7);
+}
+.Header.Recycling{
+    background-image:url(../../assets/images/recycling.jpg);
+    background-color:rgba(0,0,0,0.8);
+    background-blend-mode: multiply;
+}
+.Header.Technology{
+    background-image:url(../../assets/images/technology.jpg);
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+}
+
+
 .Container {
     max-width: 960px;
     margin:0 auto;
