@@ -20,6 +20,8 @@ const navigationItems =props=>{
             <NavigationItem place={props.place} link="/recykling-mediow-w-pralni">Recykling mediów</NavigationItem>
             <NavigationItem place={props.place} link="/wiadomosci-o-pralniach-przemyslowych">Blog</NavigationItem>
             <NavigationItem place={props.place} link="/o-pralma">O nas</NavigationItem>
+            {/** temporary */}
+            <NavigationItem link="/test">Test</NavigationItem>
             <NavigationItem place={props.place} link="/kontakt-do-producenta-pralek-przemyslowych" last="Last">Kontakt</NavigationItem>
         </ul>
     )

@@ -14,6 +14,8 @@ import News from '../../containers/News/News';
 import AboutUs from '../../containers/AboutUs/AboutUs';
 import Contact from '../../containers/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+//Temporary
+import Test from '../../containers/Test/Test';
 
 class Layout extends Component {
 
@@ -49,6 +51,8 @@ class Layout extends Component {
                   <Route path="/wiadomosci-o-pralniach-przemyslowych" render={(props)=><News {...props} data={this.state.data}/>}/>
                   <Route path="/o-pralma" render={(props)=><AboutUs {...props} data={this.state.data}/>}/>
                   <Route path="/kontakt-do-producenta-pralek-przemyslowych" render={(props)=><Contact {...props} data={this.state.data}/>}/>
+                  {/** temporary */}
+                  <Route path="/test" render={(props)=><Test {...props}/>}/>
                   </Aux>}
                 <Footer/>
             </Aux>

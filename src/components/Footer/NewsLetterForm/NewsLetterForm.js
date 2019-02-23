@@ -24,20 +24,20 @@ class NewsLetterForm extends Component {
     }
 
     inputFocusHandler=()=>{
-        console.log("Focus");
+        //console.log("Focus");
         this.setState({
             focus:true
         })
     }
     inputBlurHandler=()=>{
-        console.log("Blur");
+        //console.log("Blur");
         this.setState({
             focus:false
         })
     }
 
     changeHandler=(e)=>{
-        console.log(e.target.type)
+        //console.log(e.target.type)
         if(e.target.type==="text"){
             const value = e.target.value.trim()
             this.setState({
@@ -52,7 +52,7 @@ class NewsLetterForm extends Component {
     }
 
     newsletterValidation = ()=>{
-        console.log("Validation")
+        //console.log("Validation")
         const validation = {
             email:false,
             accept:false,
@@ -75,7 +75,7 @@ class NewsLetterForm extends Component {
         const validation = this.newsletterValidation()
 
         if(validation.correct){
-            console.log('Form submitted')
+            //console.log('Form submitted')
             this.setState({
 
                 focus:"",
@@ -87,7 +87,7 @@ class NewsLetterForm extends Component {
                 }
             })
         } else {
-            console.log('Form incorrect')
+            //console.log('Form incorrect')
             this.setState({
                 errors:{
                     email:!validation.email,
@@ -99,8 +99,8 @@ class NewsLetterForm extends Component {
     
     
     componentDidUpdate(prevProps,prevState){
-        console.log("Komponent zaktualizowany")
-        console.log(prevState)  
+        //console.log("Komponent zaktualizowany")
+        //console.log(prevState)  
         if(prevState.email!==this.state.email && this.state.email!==""){// &&false at the beginning
             const validation = this.newsletterValidation()
             this.setState({
@@ -120,7 +120,7 @@ class NewsLetterForm extends Component {
     }
 
     render(){
-        console.log(this.state.email)
+        //console.log(this.state.email)
         let classFocus ="";
         let trailningIcon = null;
 

@@ -15,7 +15,7 @@ const header =props=>{
     // actionBtn:props.actionBtn,
     // contactBoxes:props.contactBoxes
 
-    console.log(headerData)
+    //console.log(headerData)
 
     const {id,title,info,details,actionBtn,contactBoxes} = headerData
     let page = ""
@@ -38,14 +38,8 @@ const header =props=>{
                 <h1 className={classes.PageTitle}>{title}</h1>
                 <p className={classes.PageInfo}>{info}</p>
                 <p className={classes.PageDetails}>{details}</p>
-                {actionBtn && <LinkButton actionBtn={actionBtn}/>
-                // <LinkButton 
-                //     btnClass={actionBtn.class}
-                //     url={actionBtn.url}>{actionBtn.label}
-                // </LinkButton>
-                }
+                {actionBtn && <LinkButton actionBtn={actionBtn}/>}
                 {contactBoxes && <ContactBoxes contactBoxes={contactBoxes}/>}
-                
             </div>
         </header>
     )
