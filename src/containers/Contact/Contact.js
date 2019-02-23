@@ -3,32 +3,38 @@ import classes from './Contact.css';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
+import axios from '../../axios-pralma';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 import PageSectionTitle from '../../components/PageSectionTitle/PageSectionTitle';
 import IFrame from 'react-iframe';
 import Form from './Form/Form';
 
 class Contact extends Component {
-    state = {
-        //data:{title:"",info:"",details:"",...}
+
+    state={
         data:null
     }
 
     componentDidMount(){
-        const dataPages = this.props.data
-        const dataPage = dataPages.find((page)=>page.url===this.props.match.url)
-        this.setState({
-            data:dataPage
-        })
+        //console.log("Contact page")
+        axios.get("/contact.json")
+        .then(response=>{
+            //console.log(response.data)
+            this.setState({
+                data:response.data
+            })
+          })
+          .catch(error=>console.log(error.message))
     }
+
     render(){
         
-    let content = null
-    const {data} = this.state
+        let content = null
+        const {data} = this.state
 
     if(data){
             
-        const {id,title,info,details,contactBoxes} = data
+        const {title,info,details,page,contactBoxes} = data
         // console.log(contactBoxes)
         content = (
             <Aux>
@@ -36,8 +42,8 @@ class Contact extends Component {
                     title={title} 
                     info={info} 
                     details={details}
+                    page={page}
                     contactBoxes={contactBoxes}
-                    id={id}
                     />
                 <main className={classes.Contact}>
                     <section className={classes.GoogleMap}>

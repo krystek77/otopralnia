@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
-import axios from '../../axios-pralma';
 
 
 import Aux from '../Aux/Aux';
@@ -14,25 +13,8 @@ import News from '../../containers/News/News';
 import AboutUs from '../../containers/AboutUs/AboutUs';
 import Contact from '../../containers/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
-//Temporary
-import Test from '../../containers/Test/Test';
 
 class Layout extends Component {
-
-    state = {
-        data:null
-      }
-    
-      componentDidMount(){
-         axios.get('/pralma/data.json')
-        .then(response=>{
-          console.log(response.data)
-          this.setState({
-            data:response.data
-          })
-        })
-        .catch(error=>console.log(error.message))
-      }
 
     render(){
         console.log("layout render")
@@ -41,19 +23,15 @@ class Layout extends Component {
         
         return (
             <Aux>
-                <Toolbar/>
-                {this.state.data && <Aux>
-                  <Route path="/" exact render={(props)=><Home {...props} data={this.state.data}/>}/>
-                  <Route path="/klienci-pralni-przemyslowych" render={(props)=><Customers {...props} data={this.state.data}/>}/>
-                  <Route path="/wyposazenie-pralni-przemyslowych" render={(props)=><Equipment {...props} data={this.state.data}/>}/>
-                  <Route path="/technologie-nowoczesnej-pralni-przemyslowej" render={(props)=><Technology {...props} data={this.state.data}/>}/>
-                  <Route path="/recykling-mediow-w-pralni" render={(props)=><Recycling {...props} data={this.state.data}/>}/>
-                  <Route path="/wiadomosci-o-pralniach-przemyslowych" render={(props)=><News {...props} data={this.state.data}/>}/>
-                  <Route path="/o-pralma" render={(props)=><AboutUs {...props} data={this.state.data}/>}/>
-                  <Route path="/kontakt-do-producenta-pralek-przemyslowych" render={(props)=><Contact {...props} data={this.state.data}/>}/>
-                  {/** temporary */}
-                  <Route path="/test" render={(props)=><Test {...props}/>}/>
-                  </Aux>}
+                <Toolbar/>     
+                <Route path="/" exact render={(props)=><Home {...props}/>}/>
+                <Route path="/klienci-pralni-przemyslowych" render={(props)=><Customers {...props}/>}/>
+                <Route path="/wyposazenie-pralni-przemyslowych" render={(props)=><Equipment {...props}/>}/>
+                <Route path="/technologie-nowoczesnej-pralni-przemyslowej" render={(props)=><Technology {...props}/>}/>
+                <Route path="/recykling-mediow-w-pralni" render={(props)=><Recycling {...props}/>}/>
+                <Route path="/wiadomosci-o-pralniach-przemyslowych" render={(props)=><News {...props}/>}/>
+                <Route path="/o-pralma" render={(props)=><AboutUs {...props}/>}/>
+                <Route path="/kontakt-do-producenta-pralek-przemyslowych" render={(props)=><Contact {...props}/>}/>
                 <Footer/>
             </Aux>
         )

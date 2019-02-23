@@ -3,20 +3,26 @@ import classes from './Recycling.css';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
+import axios from '../../axios-pralma';
 
 class Recycling extends Component {
-    state = {
-        //data:{title:"",info:"",details:""}
+
+    state={
         data:null
     }
 
     componentDidMount(){
-        const dataPages = this.props.data
-        const dataPage = dataPages.find((page)=>page.url===this.props.match.url)
-        this.setState({
-            data:dataPage
-        })
+        //console.log("Recycling page")
+        axios.get("/recycling.json")
+        .then(response=>{
+            //console.log(response.data)
+            this.setState({
+                data:response.data
+            })
+          })
+          .catch(error=>console.log(error.message))
     }
+
     render(){
         
     let content = null
@@ -24,7 +30,7 @@ class Recycling extends Component {
 
     if(data){
             
-        const {id,title,info,details} = data
+        const {title,info,details,page} = data
 
         content = (
             <Aux>
@@ -32,7 +38,7 @@ class Recycling extends Component {
                 title={title} 
                 info={info} 
                 details={details} 
-                id={id}/>
+                page={page}/>
                 <main className={classes.Recycling}>
                     <div className={classes.Container}>
                         <h1 style={{fontSize:"6rem",textAlign:"center"}}>

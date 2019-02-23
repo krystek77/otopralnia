@@ -3,40 +3,35 @@ import classes from './Home.css';
 
 import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
+import axios from '../../axios-pralma';
 
 
 class Home extends Component {
 
-    state = {
-        //data:{title:"",info:"",details:""}
+    state={
         data:null
     }
 
     componentDidMount(){
-        
-        // console.log("Component Did Mount")
-        // console.log(this.props.match.url)
-        const dataPages = this.props.data
-        const dataPage = dataPages.find((page)=>page.url===this.props.match.url)
-        this.setState({
-            data:dataPage
-        })
+        //console.log("THome page")
+        axios.get("/home.json")
+        .then(response=>{
+            //console.log(response.data)
+            this.setState({
+                data:response.data
+            })
+          })
+          .catch(error=>console.log(error.message))
     }
 
     render(){
-        // console.log("Render")
-        // console.log(this.props)
-        // console.log(this.state.data)
-        
+
         let content = null
         const {data} = this.state
 
         if(data){
-            // console.log(this.state.data.id)
-            // console.log(this.state.data.title)
-            // console.log(this.state.data.info)
-            // console.log(this.state.data.details)
-            const {id,title,info,details,actionBtn} = data
+
+            const {title,info,details,page,actionBtn} = data
 
             content = (
                 <Aux>
@@ -45,7 +40,7 @@ class Home extends Component {
                         info={info} 
                         details={details}
                         actionBtn={actionBtn}
-                        id={id}
+                        page={page}
                         />
                     <main className={classes.Home}>
                         <div className={classes.Container}>
