@@ -42,7 +42,7 @@ class Equipment extends Component {
                     details={details}
                     page={page}/>
                 <main className={classes.Equipment}>
-                    <SectionTabs type={type} {...this.props}/>
+                    <SectionTabs type={type}/>
                 </main>
             </Aux>
             )
