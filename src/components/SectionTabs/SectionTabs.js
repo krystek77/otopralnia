@@ -2,7 +2,8 @@ import React from 'react';
 // import classes from './SectionTabs.css';
 import SectionTab from './SectionTab/SectionTab'
 import Aux from '../../hoc/Aux/Aux'
-import Card from '../../components/Cards/Card/Card';
+import CardEquipment from '../../components/CardEquipments/CardEquipment/CardEquipment';
+
 
 const compare =(objectA,objectB)=>{
     if(objectA.id < objectB.id){
@@ -22,42 +23,42 @@ const sectionTabs = props => {
     const tabs = Object.keys(type).map((tab)=>{
         return [...Array(type[tab])].reduce((a,e)=>a.concat(e))
     }).sort(compare).map((elem)=>{
+        console.log(elem)
 
-        const {id,title,cards} = elem
+        const {id,title,descTab,cards} = elem//{cards:{a:{},b:{}....},id:1,title:"Maszyny obsługowe",descTab:""}
 
-        let card = null
-        let description = null
+        let cardsEquipment = null
 
-        if(typeof cards !== "undefined") {
-            if(typeof cards.card !=="undefined" && typeof cards.description !== "undefined"){
-                card = {...cards.card}
-                description = cards.description
-        
-                card = Object.keys(card).map((type)=>{
-                return ([...Array(card[type])]).reduce((a,e)=>a.concat(e))
+        if(typeof cards !== "undefined" && typeof descTab !=="undefined") {
+            
+            cardsEquipment = Object.keys(cards).map((type)=>{
+                return ([...Array(cards[type])]).reduce((a,e)=>a.concat(e))
                 }).sort(compare).map((elem)=>{
-                return <Card 
+                return <CardEquipment 
                         key={elem.id}
                         elem ={elem}
                         />
                 })
-            }
+            
         }
 
-        if(id===1) { 
+        if(id===1) {    
             return (
                 <SectionTab 
                     key={id} 
                     active 
-                    title={title}
-                    description={description}>   
-                    {card}
+                    titleTab={title}
+                    descriptionTab={descTab}>   
+                    {cardsEquipment}
                 </SectionTab>
             )
         }
         return (
-            <SectionTab key={id} title={title} description={description}>
-                {card}
+            <SectionTab 
+                key={id} 
+                titleTab={title} 
+                descriptionTab={descTab}>
+                {cardsEquipment}
             </SectionTab>
         )
     });

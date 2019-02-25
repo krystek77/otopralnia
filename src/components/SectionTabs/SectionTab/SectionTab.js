@@ -1,22 +1,11 @@
 import React, { Component } from 'react';
 import classes from './SectionTab.css';
 import IndicatorButton from '../../UI/IndicatorButton/IndicatorButton';
-import Card from '../../../components/Cards/Card/Card';
 
 class SectionTab extends Component {
 
     state = {
         active:this.props.active
-    }
-
-    compare =(objectA,objectB)=>{
-        if(objectA.id < objectB.id){
-            return -1
-        }
-        if(objectA.id > objectB.id){
-            return 1
-        }
-        return 0
     }
 
     openTabHandler = () => {
@@ -44,7 +33,7 @@ class SectionTab extends Component {
                         <h2 
                             className={titleClass} 
                             onClick={this.openTabHandler}>
-                            {this.props.title}
+                            {this.props.titleTab}
                         </h2>
                     </div>
                 </header>
@@ -53,7 +42,7 @@ class SectionTab extends Component {
                     <div className={classes.Cards}>
                         <p 
                             className={classes.CardsDescription}>
-                            {this.props.description}
+                            {this.props.descriptionTab}
                         </p>
                         {this.props.children}
                     </div>

@@ -17,7 +17,7 @@ class Equipment extends Component {
         //console.log("Equipment page")
         axios.get("/equipment.json")
         .then(response=>{
-            console.log(response.data)
+            // console.log(response.data)
             this.setState({
                 data:response.data
             })

@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Card.css'
+import classes from './CardEquipment.css'
 import H3 from '../../H3/H3';
 import Button from '../../UI/Button/Button';
 import FX80 from '../../../../src/assets/machines/FX80.jpeg';
 
-const card = props => {
+const cardEquipment = props => {
     
     // console.log(props.elem)
     
@@ -32,4 +32,4 @@ const card = props => {
     )
 }
 
-export default card
+export default cardEquipment

@@ -67,7 +67,7 @@
     transition:width 1s ease-in;
 }
 .Active {
-    max-height: 2500px;
+    max-height: 2200px;
     transition:max-height 0.5s ease-in;
 }
 .Content.Active::after {
