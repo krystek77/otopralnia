@@ -40,7 +40,7 @@
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height:100%;
 }
@@ -67,7 +67,7 @@
     transition:width 1s ease-in;
 }
 .Active {
-    max-height: 1000px;
+    max-height: 2500px;
     transition:max-height 0.5s ease-in;
 }
 .Content.Active::after {

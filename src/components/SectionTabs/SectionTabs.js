@@ -16,16 +16,21 @@ const compare =(objectA,objectB)=>{
 const sectionTabs = props => {
 
     const type = props.type
+    console.log(type)
     const tabs = Object.keys(type).map((tab)=>{
         return [...Array(type[tab])].reduce((a,e)=>a.concat(e))
     }).sort(compare).map((elem)=>{
         if(elem.id===1) { 
             return (
-                <SectionTab key={elem.id} title={elem.title} active/>
+                <SectionTab key={elem.id} active tab={elem}>
+                    aaaa
+                </SectionTab>
             )
         }
         return (
-            <SectionTab key={elem.id} title={elem.title}/>
+            <SectionTab key={elem.id} tab={elem}>
+                aaaa
+            </SectionTab>
         )
     });
 
