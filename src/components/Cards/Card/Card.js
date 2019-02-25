@@ -6,7 +6,7 @@ import FX80 from '../../../../src/assets/machines/FX80.jpeg';
 
 const card = props => {
     
-    console.log(props.elem)
+    // console.log(props.elem)
     
     const {header,subTitle,nameParameter,valueParameter} = props.elem
 

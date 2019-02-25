@@ -29,29 +29,6 @@ class SectionTab extends Component {
         let titleClass = [classes.Title]
 
         const {active} = this.state
-        const {title,cards} =this.props.tab
-
-        let card = null
-        let description = null
-
-        if(typeof cards !== "undefined") {
-            if(typeof cards.card !=="undefined" && typeof cards.description !== "undefined"){
-                card = {...cards.card}
-                description = cards.description
-
-                card = Object.keys(card).map((type)=>{
-                    return ([...Array(card[type])]).reduce((a,e)=>a.concat(e))
-                }).sort(this.compare).map((elem)=>{
-                    return <Card 
-                        key={elem.id}
-                        elem ={elem}
-                    />
-                })
-
-            }
-        }
-        // console.log(card)
-        // console.log(description)
 
         if(active){
             contentClass=contentClass.concat([classes.Active]).join(' ')
@@ -67,7 +44,7 @@ class SectionTab extends Component {
                         <h2 
                             className={titleClass} 
                             onClick={this.openTabHandler}>
-                            {title}
+                            {this.props.title}
                         </h2>
                     </div>
                 </header>
@@ -76,9 +53,8 @@ class SectionTab extends Component {
                     <div className={classes.Cards}>
                         <p 
                             className={classes.CardsDescription}>
-                            {description}
+                            {this.props.description}
                         </p>
-                        {card}
                         {this.props.children}
                     </div>
                 </div>
