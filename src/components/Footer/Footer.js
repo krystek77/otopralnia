@@ -3,7 +3,7 @@ import classes from './Footer.css'
 import Logo from '../../components/Logo/Logo';
 import NavigationItems from '../../components/Toolbar/NavigationItems/NavigationItems';
 import NewsLetterForm from './NewsLetterForm/NewsLetterForm';
-import H3 from '../../components/H3/H3';
+import H4 from '../../components/H4/H4';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import {MdHome} from 'react-icons/md';
 
@@ -12,7 +12,7 @@ const footer = () => {
         <footer className={classes.Footer}>
             <div className={classes.Container}>
                 <div className={classes.Address}>
-                    <H3 hClass="">ADRES</H3>
+                    <H4 hClass="">ADRES</H4>
                     {/* microdata */}
                     <div className={classes.AddressWrapper} itemScope itemType="http://schema.org/LocalBusiness">
                         <meta itemProp="image" content="https://www.pralma.pl/producent-pralek-przemyslowych.jpg"/>
@@ -34,15 +34,15 @@ const footer = () => {
                     </div>
                 </div>
                 <div className={classes.Navigation}>
-                    <H3 hClass="Blue">Nawigacja</H3>
+                    <H4 hClass="Blue">Nawigacja</H4>
                     <NavigationItems place="Footer"/>
                 </div>
                 <div className={classes.Newsletter}>
-                    <H3>Newsletter</H3>
+                    <H4>Newsletter</H4>
                     <NewsLetterForm/>
                 </div>
                 <div className={classes.Social}>
-                    <H3 hClass="Blue">Media społecznościowe</H3>
+                    <H4 hClass="Blue">Media społecznościowe</H4>
                     <SocialIcons/>
                     <p className={classes.SubTitle}>Dołącz do nas...</p>
                 </div>

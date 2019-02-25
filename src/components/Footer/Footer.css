@@ -8,7 +8,9 @@
     background-position: bottom center;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
+    bottom:0;
+    left:0;
 }
 .Container {
     max-width: 1680px;

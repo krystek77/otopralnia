@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './SectionTab.css';
-import IndicatorButton from '../UI/IndicatorButton/IndicatorButton';
+import IndicatorButton from '../../UI/IndicatorButton/IndicatorButton';
+import Card from '../../../components/Cards/Card/Card';
 
 class SectionTab extends Component {
 
@@ -9,7 +10,7 @@ class SectionTab extends Component {
     }
 
     openTabHandler = () => {
-        console.log("clicked")
+        //console.log("clicked")
         this.setState((prevState)=>({active:!prevState.active}))
     }
 
@@ -21,7 +22,7 @@ class SectionTab extends Component {
         if(active){
             contentClass=contentClass.concat([classes.Active]).join(' ')
             titleClass=titleClass.concat([classes.Active]).join(' ')
-            console.log(contentClass)
+           //console.log(contentClass)
         }
         return (
             <section className={classes.Tab}>
@@ -36,8 +37,12 @@ class SectionTab extends Component {
                 </header>
                 
                 <div className={contentClass}>
-                    <div className={classes.Container}>
-                        <p>CARDS Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corruptipsam nobis voluptates odio impedit laborum temporibus praesentium beatae fugaExcepturi quasi quidem cum beatae id tempora placeat totam minima.</p>
+                <div className={classes.Cards}>
+                        <p className={classes.CardsDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque hic corporis? Magnam nemo nobis nam neque, adipisci cumque, deleniti recusandae iste aperiam nisi iusto repellat? Soluta corporis laboriosam ea.</p>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
                     </div>
                 </div>
             </section>
