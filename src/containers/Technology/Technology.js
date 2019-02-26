@@ -5,6 +5,7 @@ import Aux from '../../hoc/Aux/Aux';
 import Header from '../../components/Header/Header';
 import axios from '../../axios-pralma';
 
+import SectionTabs from '../../components/SectionTabs/SectionTabs';
 class Technology extends Component {
     
     state={
@@ -31,7 +32,7 @@ class Technology extends Component {
 
     if(data){
             
-        const {title,info,details,page} = data
+        const {title,info,details,page,type} = data
 
         content = (
             <Aux>
@@ -41,11 +42,7 @@ class Technology extends Component {
                 details={details}
                 page={page}/>
                 <main className={classes.Technology}>
-                    <div className={classes.Container}>
-                        <h1 style={{fontSize:"6rem",textAlign:"center"}}>
-                            Stosowane technologie {this.props.match.path}
-                        </h1>    
-                    </div>
+                    <SectionTabs type={type}/>
                 </main>
             </Aux>
             )

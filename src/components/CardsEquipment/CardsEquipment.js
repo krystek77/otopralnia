@@ -14,8 +14,8 @@ const compare =(objectA,objectB)=>{
 
 const cardsEquipment = props => {
 
-        const cards = props.cards
-        // console.log(cards)
+        const cards = {...props.cards}
+        const match = {...props.match}
         //{cards:{a:{},b:{}....},id:1,title:"Maszyny obsługowe",descTab:""}
 
         let cardsEquipment = null
@@ -28,6 +28,7 @@ const cardsEquipment = props => {
                 return <CardEquipment 
                         key={elem.id}
                         elem ={elem}
+                        match={match}
                         />
                 })
             

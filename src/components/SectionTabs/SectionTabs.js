@@ -16,8 +16,10 @@ const compare =(objectA,objectB)=>{
 
 const sectionTabs = props => {
 
-    const type = props.type
+    const type = {...props.type}
+    const match = {...props.match}
     // console.log(type)
+    // console.log(match)
 
     const tabs = Object.keys(type).map((tab)=>{
         return [...Array(type[tab])].reduce((a,e)=>a.concat(e))
@@ -27,12 +29,16 @@ const sectionTabs = props => {
 
         if(id===1) {    
             return (
-                <SectionTab 
+                <SectionTab
                     key={id} 
                     active 
                     titleTab={title}
                     descriptionTab={descTab}>   
-                    <CardsEquipment cards={cards} key={id}/>
+                    { cards && <CardsEquipment 
+                        cards={cards} 
+                        key={id}
+                        match={match}
+                        />}
                 </SectionTab>
             )
         }
@@ -42,7 +48,10 @@ const sectionTabs = props => {
                 key={id} 
                 titleTab={title} 
                 descriptionTab={descTab}>
-                <CardsEquipment cards={cards} key={id}/>
+                <CardsEquipment 
+                cards={cards} 
+                key={id}
+                match={match}/>
             </SectionTab>
         )
     });
