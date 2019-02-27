@@ -1,0 +1,116 @@
+.Header {
+    background-color:var(--dBlue);
+}
+.Container {
+    max-width: 1480px;
+    margin:0 auto;
+}
+.Type {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color:var(--black);
+    color: var(--grey);
+    line-height: 1.5;
+    padding:1.5rem 1.5rem;
+}
+.Content {
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.Content > .Container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.WrapperContent {
+    padding:0rem 1.5rem;
+    border-right: 1px solid var(--grey);
+    width:min-content;
+    flex-grow:1;
+    
+}
+.WrapperNavigation {
+    padding:0rem 1.5rem;
+    min-width: 320px;
+}
+
+.Navigation {
+    list-style-type: none;
+    padding-left:0;
+    background-color:rgba(189, 18, 24,1);
+    /* background-image: url(../../../../assets/bg_submenu_1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: multiply;
+}
+.NavigationItem {
+    border-bottom:0.1rem solid var(--dRed);
+}
+.NavigationLink {
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding:1.5rem 1rem 1rem;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    color:var(--grey);
+    /* background-color:var(--red); */
+    border-bottom:0.5rem solid transparent;
+    transition: background-color .3s ease-in,color .3s ease-in,border-bottom .3s ease-in;
+}
+.NavigationLink:hover,
+.NavigationLink:active,
+.NavigationLink.active {
+    border-bottom:0.5rem solid #222222;
+    background-color:rgba(235, 235, 235,0.9);
+    color:#BD1218;
+}
+.Last {
+    border-bottom:initial;
+}
+.Introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+.ImageWrapper {
+    width:480px;
+    flex-shrink: 0;
+}
+.Image {
+    display: block;
+    max-width: 100%;
+}
+.FeaturesWrapper {
+    padding:3rem 1.5rem 2rem;
+}
+
+.ItemsTitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oswald",sans-serif;
+    color:var(--dBlue);
+}
+.ItemsList {
+    font-size: 1.8rem;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    margin:1.5rem 0rem;
+}
+.ShortDescription {
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+

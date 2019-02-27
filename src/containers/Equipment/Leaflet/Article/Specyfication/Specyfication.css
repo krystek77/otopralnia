@@ -1,0 +1,43 @@
+.Specyfication {
+    width:100%;
+    padding:0rem 1.5rem;
+}
+.ButtonTabsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+.ButtonTabsWrapper Button {
+    width:100%;
+}
+.TechnicalData,.Gallery {
+    padding:1rem;
+}
+.DownloadLeaflet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TechnicalData {
+    width:100%;
+    font-size: 1.8rem;
+    text-align: center;
+    color:var(--black);
+    padding:3rem 5rem;
+}
+
+.TechnicalData th,.TechnicalData td {
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    padding:1rem;
+    border-bottom:1px solid var(--grey);
+}
+.TechnicalData thead th {
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.TechnicalData tbody th {
+    text-align: left;
+}

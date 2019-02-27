@@ -1,31 +1,25 @@
 .Title {
-    width:auto;
+    width:100%;
     color:var(--grey);
     text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 400;
-    /* white-space: nowrap; */
+    font-size: 2.4rem;
+    margin-bottom:1.5rem;
+    white-space: nowrap;
 }
 .Red {
     color:var(--dRed);
-    background-color: var(--grey);
 }
 .Blue {
     color:var(--dBlue);
-    /* background-color: white; */
-    
 }
 .Black {
     color:var(--dBlack);
-    /* background-color: var(--grey); */
 }
 .Brown {
     color:var(--dBrown);
-    /* background-color:  var(--grey); */
 }
 .Grey {
     color:var(--grey);
-    /* background-color: var(--dBlack); */
 }
 .Msmall {margin-bottom:1rem;}
 .Mmedium {margin-bottom:2rem;}

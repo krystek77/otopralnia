@@ -1,7 +1,7 @@
 .Button {
     display: block;
     text-decoration: none;
-    border-radius:0.4rem;
+    /* border-radius:0.4rem; */
     font-size: 1.6rem;
     line-height: 1;
     font-weight: 300;
@@ -9,9 +9,9 @@
     font-family: "Oswald",sans-serif;
     transition: background-color .3s ease-in, color .3s ease-in;
     width:max-content;
-    animation: buttonScale .6s ease-in-out;
     cursor:pointer;
     outline:none;
+    position: relative;
 }
 /* button red */
 .Button.Red {
@@ -47,6 +47,7 @@
     background-color: #EBEBEB;
     color: rgb(0,174,239);
 }
+
 /* button brown*/
 .Button.Brown {
     border:1px solid rgb(188,151,76);
@@ -58,6 +59,32 @@
     background-color: #EBEBEB;
     color: rgb(203,173,115);
 }
+.FS_Small {font-size:1.6rem;}
+.FS_Medium {font-size:1.8rem;}
+.FS_Big {font-size:2rem;}
+.PAD_Small {padding:0.5rem 1rem;}
+.PAD_Medium {padding:1.5rem 1rem;}
+.PAD_Big {padding:2rem 1rem;}
+
+.Button.Last {
+    border-left:none;
+}
+.Button.noBorder {
+    border:none;
+}
+.Button.Active {
+    box-shadow:4px 0px 4px -2px rgba(0,0,0,0.6);
+    background-color: #EBEBEB;
+    color: rgb(0,174,239);
+    z-index:1;
+}
+.Button.Last.Active {
+    box-shadow:-4px 0px 4px -2px rgba(0,0,0,0.6);
+}
+.Button.Animation {
+    animation: buttonScale .6s ease-in-out;
+}
+
 @keyframes buttonScale {
     0%{
         transform:scale(1);

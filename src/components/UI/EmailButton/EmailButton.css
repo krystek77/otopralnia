@@ -1,7 +1,7 @@
 .EmailButton {
     display: block;
     text-decoration: none;
-    border-radius:0.4rem;
+    /* border-radius:0.4rem; */
     height: 4.4rem;
     font-size: 1.6rem;
     font-weight: 400;

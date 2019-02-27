@@ -44,10 +44,10 @@ class Equipment extends Component {
                     details={details}
                     page={page}/>
                 <main className={classes.Equipment}>
-                <Switch>
-                    <Route path={this.props.match.url+"/:kind"} render={(props)=><Leaflet {...props} type={type}/>}/>
-                    <Route path={this.props.match.url} render={props=><SectionTabs {...props} type={type}/>}/>
-                </Switch>
+                    <Switch>
+                        <Route path={this.props.match.url+"/:kind"} render={(props)=><Leaflet {...props} type={type}/>}/>
+                        <Route path={this.props.match.url} render={props=><SectionTabs {...props} type={type}/>}/>
+                    </Switch>
                 </main>
             </Aux>
             )

@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import classes from './Leaflet.css';
+import {Route} from 'react-router-dom';
+import Article from './Article/Article';
+
 import Aux from '../../../hoc/Aux/Aux'
 
 class Leaflet extends Component {
@@ -9,7 +12,7 @@ class Leaflet extends Component {
     }
 
     componentDidUpdate(){
-        console.log("Zaktualizowany")
+        // console.log("Zaktualizowany")
         
     }
     componentDidMount(){
@@ -40,9 +43,8 @@ class Leaflet extends Component {
             content = (
 
                 <div className={classes.Leaflet}>
-                    <h1>podstrona hahahah</h1>
+                    <Route path={this.props.match.url} render={props=><Article {...props}/>}/>
                 </div>
-
             )
         }
 

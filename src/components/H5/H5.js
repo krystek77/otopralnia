@@ -1,13 +1,13 @@
 import React from 'react';
-import classes from './H4.css';
+import classes from './H5.css';
 
-const h4 = props => {
+const h5 = props => {
 
     const hClass = [classes.Title,classes[props.hClass],classes[props.hSize],classes[props.hMb]].join(' ')
 
     return (
-        <h4 className={hClass}>{props.children}</h4>
+        <h5 className={hClass}>{props.children}</h5>
     )
 }
 
-export default h4;
+export default h5;
