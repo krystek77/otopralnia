@@ -22,6 +22,7 @@ class Article extends Component {
                             <div className={classes.WrapperContent}>
                                 {/** Introduction stateless component */}
                                 <section className={classes.Introduction}>
+
                                     <div className={classes.ImageWrapper}>
                                         <img className={classes.Image} src={image} alt=""/>
                                     </div>
@@ -52,7 +53,13 @@ class Article extends Component {
                                                 <li>wersja elektryczno - parowa</li>
                                             </ul>
                                         </div>
-                                        <p className={classes.ShortDescription}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus deserunt unde perferendis velit voluptas earum explicabo ex dignissimos dolorem similique, repudiandae culpa, quasi porro adipisci numquam dolore. Pariatur, provident officia.</p>
+                                        <p className={classes.ShortDescription}>
+                                            Pralnica bębnowa o załadunku czołowym przenaczona jest do przemysłowego prania każdego rodzaju
+                                            tkanin i odzieży. Cechą charakterystyczną jest prosta i solidna konstrukcja. Minimum elektroniki
+                                            oraz brak skomplikowanych rozwiązań technicznzych, czyni to urządzenie najtańsze w eksploatacji
+                                            i bardzo trwałe. Urządzenia w standardzie posiadają zarówno nierdzewny bęben wewnętrzny i zewnętrzny oraz oblachowanie. Wersja półautomatyczna zapewnia maksymalną kontrolę na zużyciem wody i całym
+                                            cyklem prania, zaś wersja automatyczna, szybką i komfortową pracę.  
+                                        </p>
                                     </div>
                                 </section>
                                 {/** Technology statefull component */}
