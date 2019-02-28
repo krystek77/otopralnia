@@ -4,12 +4,14 @@ import classes from './Article.css'
 import H3 from '../../../../components/H3/H3';
 import H4 from '../../../../components/H4/H4';
 import Specyfication from './Specyfication/Specyfication';
-import Technology from './Technology/Technology';
+import Technologies from './Technologies/Technologies';
 
 import image from '../../../../assets/machines/FX80L.jpeg';
 
 class Article extends Component {
     render(){
+        console.log("Article")
+        console.log(this.props)
         return(
                 <article>
                     <header className={classes.Header}>
@@ -63,7 +65,7 @@ class Article extends Component {
                                     </div>
                                 </section>
                                 {/** Technology statefull component */}
-                                <Technology/>
+                                <Technologies technologies={this.props.technologies}/>
                             </div>
                             <aside className={classes.WrapperNavigation}>
                                <H4 hClass="Black" hMb="Mmedium">Dostępne modele</H4>

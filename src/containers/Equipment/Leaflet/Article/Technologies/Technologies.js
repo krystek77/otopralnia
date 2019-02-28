@@ -1,19 +1,8 @@
 import React, { Component } from 'react';
-import classes from './Technology.css';
+import classes from './Technologies.css';
 
 import H3 from '../../../../../components/H3/H3';
 import Aux from '../../../../../hoc/Aux/Aux';
-
-//Recived by props
-const technologies = [
-    {id:1,name:"Sterownik TC",desc:"Sterownik mikroprocesorowy TC to prosta obsługa i duża elastyczność procesu prania. Wyposażony w pełny system zabezpieczeń dla urządzeń ze sterowaniem półautomatycznym. Umożliwia programowanie czasu obrotów rewersji i postoju, płynną regulację czasu i temperatury prania. Pełny system zabezpieczeń dla pralnic ze sterowaniem manualnym (półautomatycznym). "},
-
-    {id:2,name:"Nierdzewne oblachowanie",desc:"Brak rdzy i to po wielu wydajnych latach użytkowania. To nie tylko gwarancja ładnego wyglądu urządzenia, to też obniżenie kosztów eksploatacji dzięki braku konieczności wymiany skorodowanych elementów na nowe, tak jak w przypadku oblachowania ocynkowanego, lakierowanego proszkowo. Wersja ocynkowana, tańsza przy zakupie okazywała się o wiele droższa w przyszłości."},
-
-    {id:3,name:"Kulowe zawory",desc:"Proste jest piękne i genialne. Kulowe zarowy wodne, zarówno zasilające i spustowy gwarantują Ci niezawodność działania oraz pełną kontrolę nad zużyciem wody w procesie każdego cyklu prania. To bardzo elastyczne rozwiązania umożliwia maksymalną optymalizację kosztów prania"},
-
-    {id:4,name:"Nierdzewny bęben",desc:"Obowiązkowe wykonanie dla każdego rodzaju przemysłowego urządzenia pralniczego. Brak niepożądanych reakcji chemicznych z bębnem oraz śladów rdzy na praniu lub innych powłok, jak w przypadku bębnów ocynkowanych. To już nie tylko gwarancja zachowania wysokiej jakości prania ale i braku negatywnych skutków na zdrowie każdego z nas."}
-]
 
 class Technology extends Component {
     //recived props will be table of objects
@@ -26,7 +15,8 @@ class Technology extends Component {
     }
     
     componentDidMount(){
-        const tech = [...technologies]
+        console.log(this.props.technologies) //table of objects
+        const tech = [...this.props.technologies]
         const amountTechnologies = tech.length
         const active = [...Array(amountTechnologies)].map((elem)=>false)
 
@@ -43,7 +33,7 @@ class Technology extends Component {
     }
 
     technologyNameOverHandler=(technologyId)=>{
-        const tech = [...technologies];
+        const tech = [...this.props.technologies];
         const index = tech.findIndex((technology)=>technology.id===technologyId)
         const selectedTechnology = tech.splice(index,1)
         const [selected ] = selectedTechnology
@@ -60,10 +50,10 @@ class Technology extends Component {
     }
 
     render() {
-        console.log(this.state.active)
         let content = null
-        
-        if(technologies.length){
+        const tech = this.props.technologies
+
+        if(tech.length){
             
             let desc = ""
     
@@ -75,7 +65,7 @@ class Technology extends Component {
                 )
             }
             
-            const technologyNames = technologies.map((technology,index)=>{
+            const technologyNames = tech.map((technology,index)=>{
 
                 if(this.state.active[index]===true){
                     return (
