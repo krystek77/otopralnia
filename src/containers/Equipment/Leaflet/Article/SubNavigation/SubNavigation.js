@@ -1,17 +1,10 @@
 import React from 'react';
 import classes from './SubNavigation.css';
 import H4 from '../../../../../components/H4/H4';
+import {compare} from '../../../../../vendor/functions';
 import {NavLink} from 'react-router-dom';
 
-const compare =(objectA,objectB)=>{
-    if(objectA.id < objectB.id){
-        return -1
-    }
-    if(objectA.id > objectB.id){
-        return 1
-    }
-    return 0
-}
+
 
 const subNavigation = props => {
     
@@ -24,17 +17,17 @@ const subNavigation = props => {
         if(lastIndex===index){
             itemClass = itemClass.concat(classes["Last"]).join(' ')
         }
-        
-
+        console.log("Subnavigation")
+        console.log(props.match)
         return (<li 
                     key={item.id} 
                     className={itemClass}>
                     <NavLink 
-                        className={classes.NavigationLink}
-                        activeClassName={classes.Active} 
+                        className={classes.NavigationLink} 
                         to={{
                             pathname:item.name
-                        }}>
+                        }}
+                        >
                         {item.name}
                     </NavLink>
                 </li>)

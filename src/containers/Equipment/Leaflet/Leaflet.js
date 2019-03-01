@@ -84,7 +84,7 @@ class Leaflet extends Component {
         console.log(this.state.shortDesc)
         console.log(this.state.familyTitle)
         
-            if(this.state.family.length > 0 && this.state.technologies.length > 0){
+            if(this.state.family.length > 0 || this.state.technologies.length > 0){
                 content = (
 
                     <div className={classes.Leaflet}>
