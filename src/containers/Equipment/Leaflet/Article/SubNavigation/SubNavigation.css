@@ -1,0 +1,40 @@
+.SubNavigation {
+    padding:0rem 1.5rem;
+    min-width: 320px;
+}
+.Navigation {
+    list-style-type: none;
+    padding-left:0;
+    background-color:rgba(189, 18, 24,1);
+    /* background-image: url(../../../../assets/bg_submenu_1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: multiply;
+}
+.NavigationItem {
+    border-bottom:0.1rem solid var(--dRed);
+}
+.NavigationLink {
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding:1.5rem 1rem 1rem;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    color:var(--grey);
+    /* background-color:var(--red); */
+    border-bottom:0.5rem solid transparent;
+    transition: background-color .3s ease-in,color .3s ease-in,border-bottom .3s ease-in;
+}
+.NavigationLink:hover,
+.NavigationLink:active,
+.NavigationLink.Active {
+    border-bottom:0.5rem solid #222222;
+    background-color:rgba(235, 235, 235,0.9);
+    color:#BD1218;
+}
+.Last {
+    border-bottom:initial;
+}

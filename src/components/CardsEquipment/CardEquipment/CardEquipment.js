@@ -10,10 +10,27 @@ const cardEquipment = props => {
     
     // console.log(props)
     
-    const {link,header,subTitle,nameParameter,valueParameter} = props.elem
+    const {link,header,subTitle,nameParameter,valueParameter,family} = props.elem
+    // console.log(props.match.url)
+    let tab = []
+    let first = null
+    let name ="PBE-08" //temporary
+    
+
+    if(typeof family!=="undefined") {
+
+        for(let property in family){
+            tab = tab.concat(family[property])
+        }
+        first = tab.find((elem)=>elem.id===1)
+        name = first.name
+
+        // console.log(tab)
+        // console.log(name)
+    }
 
     return(
-        <Link className={classes.Card} to={props.match.url+"/"+link}>
+        <Link className={classes.Card} to={props.match.url+"/"+link+"/"+name}>
             <article className={classes.InnerWrapper}>
                 <header className={classes.Header}>
                     <H3 hClass="Blue">{header}</H3>

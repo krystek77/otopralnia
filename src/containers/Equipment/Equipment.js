@@ -46,8 +46,12 @@ class Equipment extends Component {
                 <main className={classes.Equipment}>
                     <Switch>
                         <Route path={this.props.match.url+"/:kind"} render={(props)=><Leaflet {...props} type={type}/>}/>
+                        {/** kind = for example pralnice-czolowe/PBE-08
+                            wyposazenie-pralni-przemyslowych/pralnice-czolowe/PBE-08
+                         */}
                         <Route path={this.props.match.url} render={props=><SectionTabs {...props} type={type}/>}/>
-                    </Switch>
+                        {/** wyposazenie-pralni-przemyslowych */}
+                        </Switch>
                 </main>
             </Aux>
             )

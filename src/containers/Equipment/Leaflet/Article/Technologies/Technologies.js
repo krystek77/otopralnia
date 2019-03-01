@@ -15,7 +15,7 @@ class Technology extends Component {
     }
     
     componentDidMount(){
-        console.log(this.props.technologies) //table of objects
+        // console.log(this.props.technologies) 
         const tech = [...this.props.technologies]
         const amountTechnologies = tech.length
         const active = [...Array(amountTechnologies)].map((elem)=>false)

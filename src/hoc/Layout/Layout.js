@@ -26,7 +26,7 @@ class Layout extends Component {
                 <Toolbar/>
                 <Switch>
                     <Route path="/klienci-pralni-przemyslowych" render={(props)=><Customers {...props}/>}/>
-                    <Route path="/wyposazenie-pralni-przemyslowych/" render={(props)=><Equipment {...props}/>}/>
+                    <Route path="/wyposazenie-pralni-przemyslowych" render={(props)=><Equipment {...props}/>}/>
                     <Route path="/technologie-nowoczesnej-pralni-przemyslowej" render={(props)=><Technology {...props}/>}/>
                     <Route path="/recykling-mediow-w-pralni" render={(props)=><Recycling {...props}/>}/>
                     <Route path="/wiadomosci-o-pralniach-przemyslowych" render={(props)=><News {...props}/>}/>
