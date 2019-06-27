@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/otopralnia/static/media/coin_rx.fc1a2209.png"
   },
   {
-    "revision": "7dc61d95252bc59934b9",
+    "revision": "3a79f5f03fd2d87c59bd",
     "url": "/otopralnia/static/css/main.9450900e.chunk.css"
   },
   {
@@ -20,24 +20,12 @@ self.__precacheManifest = [
     "url": "/otopralnia/static/media/home.96c2a0e3.jpg"
   },
   {
-    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
-    "url": "/otopralnia/static/media/customers.ed3f4c1e.jpg"
-  },
-  {
-    "revision": "49598cabe16efadba47b44afc09f76cc",
-    "url": "/otopralnia/static/media/contact.49598cab.jpg"
-  },
-  {
     "revision": "ca16670ba8207cdb14ee4199e23a0e3e",
     "url": "/otopralnia/static/media/aboutUs.ca16670b.jpg"
   },
   {
     "revision": "ed3f4c1ef895b6da9ace878c9591711a",
-    "url": "/otopralnia/static/media/equipment.ed3f4c1e.jpg"
-  },
-  {
-    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
-    "url": "/otopralnia/static/media/blog.ed3f4c1e.jpg"
+    "url": "/otopralnia/static/media/customers.ed3f4c1e.jpg"
   },
   {
     "revision": "ed3f4c1ef895b6da9ace878c9591711a",
@@ -46,6 +34,18 @@ self.__precacheManifest = [
   {
     "revision": "78b647470987cbd365fba943fbbaee13",
     "url": "/otopralnia/static/media/technology.78b64747.jpg"
+  },
+  {
+    "revision": "49598cabe16efadba47b44afc09f76cc",
+    "url": "/otopralnia/static/media/contact.49598cab.jpg"
+  },
+  {
+    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
+    "url": "/otopralnia/static/media/equipment.ed3f4c1e.jpg"
+  },
+  {
+    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
+    "url": "/otopralnia/static/media/blog.ed3f4c1e.jpg"
   },
   {
     "revision": "054a39d5ec32c90601c3a1f7fa2c1262",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/otopralnia/static/media/coin_pralnicowirowki_wysokoobrotowe.14903402.png"
   },
   {
-    "revision": "7dc61d95252bc59934b9",
-    "url": "/otopralnia/static/js/main.7dc61d95.chunk.js"
+    "revision": "3a79f5f03fd2d87c59bd",
+    "url": "/otopralnia/static/js/main.3a79f5f0.chunk.js"
   },
   {
     "revision": "99160b6842f6b23a468ca0ec16ae1abb",
@@ -136,7 +136,7 @@ self.__precacheManifest = [
     "url": "/otopralnia/static/media/FX_COIN.1aea2b6a.jpeg"
   },
   {
-    "revision": "95a9b0b85c67b07e957f8792cffc994c",
+    "revision": "87b3267c8ba08389cb8f17f62b50e49d",
     "url": "/otopralnia/index.html"
   }
 ];
