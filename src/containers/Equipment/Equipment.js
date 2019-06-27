@@ -10,11 +10,20 @@ import Leaflet from './Leaflet/Leaflet';
 
 import {Route,Switch} from 'react-router-dom';
 
+const images = require.context('../../../public/images',true)
+console.log(images)
+
 class Equipment extends Component {
 
     state={
         data:null
     }
+
+    componentDidUpdate(prevProps,prevState){
+        console.log(prevProps)
+        console.log(prevState)
+    }
+
 
     componentDidMount(){
         //console.log("Equipment page")
@@ -29,8 +38,12 @@ class Equipment extends Component {
     }
 
     render(){
+        // console.log("Equipment")
+        // console.log(this.props.match.url)
     let content = null
     const {data} = this.state
+    
+   
 
     if(data){
             
@@ -45,13 +58,10 @@ class Equipment extends Component {
                     page={page}/>
                 <main className={classes.Equipment}>
                     <Switch>
-                        <Route path={this.props.match.url+"/:kind"} render={(props)=><Leaflet {...props} type={type}/>}/>
-                        {/** kind = for example pralnice-czolowe/PBE-08
-                            wyposazenie-pralni-przemyslowych/pralnice-czolowe/PBE-08
-                         */}
+                        <Route path={this.props.match.url+"/:link/"} render={(props)=><Leaflet {...props} type={type}/>}/>{/**:link - pralnice-czolowe */}
+                        
                         <Route path={this.props.match.url} render={props=><SectionTabs {...props} type={type}/>}/>
-                        {/** wyposazenie-pralni-przemyslowych */}
-                        </Switch>
+                    </Switch>
                 </main>
             </Aux>
             )

@@ -4,6 +4,7 @@
 .Container {
     max-width: 1480px;
     margin:0 auto;
+    position: relative;
 }
 .Type {
     font-size: 4rem;
@@ -14,6 +15,19 @@
     color: var(--grey);
     line-height: 1.5;
     padding:1.5rem 1.5rem;
+}
+.Controls {
+    position: absolute;
+    right:1.5rem;
+    top:50%;
+    transform: translateY(-50%);
+    color:var(--grey);
+    font-size: 2.2rem;
+}
+.Controls > span {
+    display: inline-block;
+    width:2.4rem;
+    height:2.4rem;
 }
 .Content {
     padding-top:2rem;

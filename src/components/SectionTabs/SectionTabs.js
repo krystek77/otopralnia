@@ -3,16 +3,8 @@ import React from 'react';
 import SectionTab from './SectionTab/SectionTab'
 import Aux from '../../hoc/Aux/Aux';
 import CardsEquipment from '../CardsEquipment/CardsEquipment';
+import {compare} from '../../vendor/functions';
 
-const compare =(objectA,objectB)=>{
-    if(objectA.id < objectB.id){
-        return -1
-    }
-    if(objectA.id > objectB.id){
-        return 1
-    }
-    return 0
-}
 
 const sectionTabs = props => {
 
@@ -28,30 +20,37 @@ const sectionTabs = props => {
         const {id,title,descTab,cards} = elem //{cards:{a:{},b:{}....},id:1,title:"Maszyny obsługowe",descTab:""}
 
         if(id===1) {    
+            console.log("SectionTabs")
+            console.log(cards)
             return (
                 <SectionTab
                     key={id} 
                     active 
                     titleTab={title}
-                    descriptionTab={descTab}>   
+                    descriptionTab={descTab}
+                    disabled = {cards ? "false":"true"}>   
                     { cards && <CardsEquipment 
                         cards={cards} 
                         key={id}
                         match={match}
                         />}
+                
                 </SectionTab>
             )
         }
-        
+        console.log("SectionTabs")
+        console.log(cards)
         return (
             <SectionTab 
                 key={id} 
                 titleTab={title} 
-                descriptionTab={descTab}>
-                <CardsEquipment 
+                descriptionTab={descTab}
+                disabled = {typeof cards!=="undefined" && cards!==null ? "false":"true"}> 
+                
+                { cards && <CardsEquipment 
                 cards={cards} 
                 key={id}
-                match={match}/>
+                match={match}/>}
             </SectionTab>
         )
     });

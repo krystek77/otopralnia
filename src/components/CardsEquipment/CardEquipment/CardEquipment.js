@@ -4,14 +4,14 @@ import H3 from '../../H3/H3';
 import Button from '../../UI/Button/Button';
 import {Link} from 'react-router-dom';
 
-import FX80 from '../../../../src/assets/machines/FX80.jpeg';
-
 const cardEquipment = props => {
     
     // console.log(props)
     
     const {link,header,subTitle,nameParameter,valueParameter,family} = props.elem
+    // console.log("CardEquipment")
     // console.log(props.match.url)
+    // console.log(props.elem)
     let tab = []
     let first = null
     let name ="PBE-08" //temporary
@@ -28,7 +28,7 @@ const cardEquipment = props => {
         // console.log(tab)
         // console.log(name)
     }
-
+    // console.log(props.imageSrc)
     return(
         <Link className={classes.Card} to={props.match.url+"/"+link+"/"+name}>
             <article className={classes.InnerWrapper}>
@@ -37,7 +37,7 @@ const cardEquipment = props => {
                     <p className={classes.SubTitle}>{subTitle}</p>
                 </header>
                 <div className={classes.ImageContainer}>
-                    <img className={classes.Image} src={FX80} alt=""/>
+                    <img className={classes.Image} src={props.imageSrc} alt=""/>
                 </div>
                 <footer className={classes.Footer}>
                     <div className={classes.Parameters}>

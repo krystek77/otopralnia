@@ -29,9 +29,9 @@ class Leaflet extends Component {
         });
         
         const card = typesInArray.filter((elem)=>typeof elem.cards !== "undefined" && elem.cards !== null).map((cards)=> cards.cards).map((elem)=>Object.keys(elem).map((key)=>elem[key])).reduce((a,e)=>a.concat(e))
-        .filter((elem)=>elem.link === this.props.match.params.kind)
-        console.log("Card")
-        console.log(card);
+        .filter((elem)=>elem.link === this.props.match.params.link)
+        // console.log("Card")
+        // console.log(card);
         if(card.length > 0){
             const [obj] = card;
 
@@ -79,10 +79,8 @@ class Leaflet extends Component {
 
     render(){
         let content = null;
-        console.log("Leaflet")
-        console.log(this.props)
-        console.log(this.state.shortDesc)
-        console.log(this.state.familyTitle)
+        // console.log("Leaflet")
+        // console.log(this.props.match.url)
         
             if(this.state.family.length > 0 || this.state.technologies.length > 0){
                 content = (
@@ -90,7 +88,7 @@ class Leaflet extends Component {
                     <div className={classes.Leaflet}>
                     
                         <Route 
-                            path={this.props.match.url+"/:name"}
+                            path={this.props.match.url+"/:name/"}
                             // for example: wyposazenie-pralni-przemyslowych/pralnice-czolowe/PBE-15A 
                             render={props=><Article 
                             {...props} 

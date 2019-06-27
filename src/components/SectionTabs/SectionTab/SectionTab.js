@@ -6,6 +6,7 @@ class SectionTab extends Component {
 
     state = {
         active:this.props.active
+        
     }
 
     openTabHandler = () => {
@@ -24,6 +25,7 @@ class SectionTab extends Component {
             titleClass=titleClass.concat([classes.Active]).join(' ')
            //console.log(contentClass)
         }
+        
         return (
             <section className={classes.Tab}>
 

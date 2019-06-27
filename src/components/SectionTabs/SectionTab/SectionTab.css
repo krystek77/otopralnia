@@ -70,6 +70,8 @@
     max-height: 2200px;
     transition:max-height 0.5s ease-in;
 }
+
+
 .Content.Active::after {
     width:0%;
     transition:width 0.5s ease-out;

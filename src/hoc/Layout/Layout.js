@@ -16,10 +16,17 @@ import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
 
+    componentDidUpdate(prevProps,prevState){
+        // console.log("Layout update")
+        // console.log(prevProps)
+        // console.log(prevState)
+    }
+
     render(){
         // console.log("layout render")
         // console.log(this.state)
         // console.log("____________________")
+        // console.log(this.props)
         
         return (
             <Aux>
