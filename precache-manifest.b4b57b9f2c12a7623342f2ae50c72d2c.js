@@ -20,22 +20,6 @@ self.__precacheManifest = [
     "url": "/otopralnia/static/media/home.96c2a0e3.jpg"
   },
   {
-    "revision": "ca16670ba8207cdb14ee4199e23a0e3e",
-    "url": "/otopralnia/static/media/aboutUs.ca16670b.jpg"
-  },
-  {
-    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
-    "url": "/otopralnia/static/media/customers.ed3f4c1e.jpg"
-  },
-  {
-    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
-    "url": "/otopralnia/static/media/recycling.ed3f4c1e.jpg"
-  },
-  {
-    "revision": "78b647470987cbd365fba943fbbaee13",
-    "url": "/otopralnia/static/media/technology.78b64747.jpg"
-  },
-  {
     "revision": "49598cabe16efadba47b44afc09f76cc",
     "url": "/otopralnia/static/media/contact.49598cab.jpg"
   },
@@ -45,7 +29,23 @@ self.__precacheManifest = [
   },
   {
     "revision": "ed3f4c1ef895b6da9ace878c9591711a",
+    "url": "/otopralnia/static/media/customers.ed3f4c1e.jpg"
+  },
+  {
+    "revision": "ca16670ba8207cdb14ee4199e23a0e3e",
+    "url": "/otopralnia/static/media/aboutUs.ca16670b.jpg"
+  },
+  {
+    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
+    "url": "/otopralnia/static/media/recycling.ed3f4c1e.jpg"
+  },
+  {
+    "revision": "ed3f4c1ef895b6da9ace878c9591711a",
     "url": "/otopralnia/static/media/blog.ed3f4c1e.jpg"
+  },
+  {
+    "revision": "78b647470987cbd365fba943fbbaee13",
+    "url": "/otopralnia/static/media/technology.78b64747.jpg"
   },
   {
     "revision": "054a39d5ec32c90601c3a1f7fa2c1262",

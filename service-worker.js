@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/otopralnia/precache-manifest.4392ba6fef2a8b66e0f3a1a1fb86da28.js"
+  "/otopralnia/precache-manifest.b4b57b9f2c12a7623342f2ae50c72d2c.js"
 );
 
 workbox.clientsClaim();
